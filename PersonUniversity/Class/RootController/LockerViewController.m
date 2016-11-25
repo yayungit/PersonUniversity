@@ -14,23 +14,15 @@
 
 @implementation LockerViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (instancetype)initWithMainVC:(UIViewController *)mainVC leftVC:(UIViewController *)leftVC backGroundImage:(UIImage *)image{
     self = [super init];
     if (self) {
         self.speedF = 0.5;
         self.mainVC = mainVC;
         self.leftVC = leftVC;
-        
+        leftVC.view.frame = self.view.frame;
+        [self addChildViewController:mainVC];
+        [self addChildViewController:leftVC];
         UIImageView *imageV = [[UIImageView alloc] initWithFrame:self.view.frame];
         imageV.image = image;
         [self.view addSubview:imageV];
@@ -58,18 +50,20 @@
     self.scalef += point.x*_speedF;
     if (pan.view.frame.origin.x>=0) { // 右滑
         pan.view.center = CGPointMake(pan.view.center.x+point.x*_speedF, pan.view.center.y);
-        pan.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1-_scalef/1000, 1-_scalef/1000);
+        // 根据速度缩放主视图
+//        pan.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1-_scalef/1000, 1-_scalef/1000);
+        pan.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0);
         [pan setTranslation:CGPointMake(0, 0) inView:self.view];
         _leftVC.view.hidden = NO;
         /**
          * 左滑没有设置
          */
-    }else if (pan.view.frame.origin.x < 0){
+    } else if (pan.view.frame.origin.x < 0){
        // 可以添加右侧抽屉
-    }
-    else { // 否则显示主视图
+    } else { // 否则显示主视图
         pan.view.center    = CGPointMake(pan.view.center.x+point.x*_speedF, pan.view.center.y);
         pan.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0+_scalef/1000, 1.0+_scalef/1000);
+        
         [pan setTranslation:CGPointMake(0, 0) inView:self.view];
         _leftVC.view.hidden = YES;
     }
@@ -109,8 +103,8 @@
 //  展示左视图
 - (void)showLeftV {
     [UIView beginAnimations:nil context:nil];
-    _mainVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.8, 0.8); // 缩放系数
-    _mainVC.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height/2);
+    _mainVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0); // 缩放系数
+    _mainVC.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width*5/4,[UIScreen mainScreen].bounds.size.height/2);
     [UIView commitAnimations];
 }
 // 可以隐藏状态栏，返回no是不隐藏

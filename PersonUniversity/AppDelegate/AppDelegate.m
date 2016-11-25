@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "TabbarViewController.h"
+#import "LeftViewController.h"
+#import "LockerViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,8 +20,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    TabbarViewController *rootVc = [[TabbarViewController alloc] init];
-    self.window.rootViewController = rootVc;
+    TabbarViewController *tabbarVC = [[TabbarViewController alloc] init];
+    LeftViewController *leftVC = [[LeftViewController alloc] init];
+    
+    LockerViewController *lockerViewController = [[LockerViewController alloc] initWithMainVC:tabbarVC leftVC:leftVC backGroundImage:nil];
+    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = lockerViewController;
     [self.window makeKeyAndVisible ];
     
     return YES;

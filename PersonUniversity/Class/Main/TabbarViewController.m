@@ -9,7 +9,7 @@
 #import "TabbarViewController.h"
 #import "NavigationViewController.h"
 #import "LockerViewController.h"
-
+#import "MainViewController.h"
 @interface TabbarViewController ()
 
 @end
@@ -18,9 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    LockerViewController *lockerViewController = [[LockerViewController alloc] init];
-    NavigationViewController *naVC = [[NavigationViewController alloc] initWithRootViewController:lockerViewController];
-    self.viewControllers = @[naVC];
+    MainViewController *mainVC = [[MainViewController alloc] init];
+    NavigationViewController *naVC = [[NavigationViewController alloc] initWithRootViewController:mainVC];
+    [self addChildViewController:naVC];
 }
 
 - (void)didReceiveMemoryWarning {
