@@ -1,29 +1,31 @@
 //
-//  NavigationViewController.m
+//  CommunityViewController.m
 //  PersonUniversity
 //
-//  Created by 何亚运 on 16/11/24.
+//  Created by 何亚运 on 2016/11/25.
 //  Copyright © 2016年 YYStar. All rights reserved.
 //
 
-#import "NavigationViewController.h"
-@interface NavigationViewController ()
+#import "CommunityViewController.h"
+
+@interface CommunityViewController ()
 
 @end
 
-@implementation NavigationViewController
+@implementation CommunityViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-   
+    self.navigationItem.title = @"Community";
+    self.tabBarItem.title = @"Community";
+    self.view.backgroundColor = [UIColor yellowColor];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 /*
 #pragma mark - Navigation

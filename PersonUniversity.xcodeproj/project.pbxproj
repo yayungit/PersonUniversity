@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0D0BC03E1DE71A26000134B8 /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0BC03D1DE71A26000134B8 /* TabbarViewController.m */; };
 		0D0BC0411DE71A4D000134B8 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0BC0401DE71A4D000134B8 /* NavigationViewController.m */; };
+		0D0D6DC41DE83ED000FA3D1A /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D6DC21DE83ED000FA3D1A /* CommunityViewController.m */; };
+		0D0D6DC51DE83ED000FA3D1A /* CommunityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0D6DC31DE83ED000FA3D1A /* CommunityViewController.xib */; };
 		0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */; };
 		0DCDFEF31DD1C99F009F31F9 /* PersonUniversityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFEF21DD1C99F009F31F9 /* PersonUniversityTests.m */; };
 		0DCDFEFE1DD1C99F009F31F9 /* PersonUniversityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFEFD1DD1C99F009F31F9 /* PersonUniversityUITests.m */; };
@@ -44,6 +46,9 @@
 		0D0BC03D1DE71A26000134B8 /* TabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
 		0D0BC03F1DE71A4D000134B8 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
 		0D0BC0401DE71A4D000134B8 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		0D0D6DC11DE83ED000FA3D1A /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
+		0D0D6DC21DE83ED000FA3D1A /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
+		0D0D6DC31DE83ED000FA3D1A /* CommunityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityViewController.xib; sourceTree = "<group>"; };
 		0DCDFED51DD1C99F009F31F9 /* PersonUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DCDFEE91DD1C99F009F31F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +106,40 @@
 				0D0BC0401DE71A4D000134B8 /* NavigationViewController.m */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		0D0D6DBD1DE83EB200FA3D1A /* Community（社区） */ = {
+			isa = PBXGroup;
+			children = (
+				0D0D6DBE1DE83EB200FA3D1A /* Controller */,
+				0D0D6DBF1DE83EB200FA3D1A /* Model */,
+				0D0D6DC01DE83EB200FA3D1A /* View */,
+			);
+			path = "Community（社区）";
+			sourceTree = "<group>";
+		};
+		0D0D6DBE1DE83EB200FA3D1A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D0D6DC11DE83ED000FA3D1A /* CommunityViewController.h */,
+				0D0D6DC21DE83ED000FA3D1A /* CommunityViewController.m */,
+				0D0D6DC31DE83ED000FA3D1A /* CommunityViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D0D6DBF1DE83EB200FA3D1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D0D6DC01DE83EB200FA3D1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		0DCDFECC1DD1C99F009F31F9 = {
@@ -173,6 +212,7 @@
 		0DCDFF0F1DD1CAA4009F31F9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0D0D6DBD1DE83EB200FA3D1A /* Community（社区） */,
 				0D0BC03B1DE719D5000134B8 /* Main */,
 				0DCDFF1C1DD1CBD6009F31F9 /* RootController */,
 			);
@@ -309,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0D6DC51DE83ED000FA3D1A /* CommunityViewController.xib in Resources */,
 				0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */,
 				0DCDFF291DD1CCA3009F31F9 /* LeftViewController.xib in Resources */,
 				0DCDFF211DD1CC05009F31F9 /* MainViewController.xib in Resources */,
@@ -337,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0D6DC41DE83ED000FA3D1A /* CommunityViewController.m in Sources */,
 				0DCDFF241DD1CC49009F31F9 /* LockerViewController.m in Sources */,
 				0DCDFF281DD1CCA3009F31F9 /* LeftViewController.m in Sources */,
 				0D0BC0411DE71A4D000134B8 /* NavigationViewController.m in Sources */,

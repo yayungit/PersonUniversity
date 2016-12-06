@@ -7,12 +7,12 @@
 //
 
 #import "LockerViewController.h"
-
 @interface LockerViewController ()
 @property (nonatomic, assign) CGFloat scalef; // 设置一个滑动的偏移
 @end
 
 @implementation LockerViewController
+
 
 - (instancetype)initWithMainVC:(UIViewController *)mainVC leftVC:(UIViewController *)leftVC backGroundImage:(UIImage *)image{
     self = [super init];
@@ -20,21 +20,10 @@
         self.speedF = 0.5;
         self.mainVC = mainVC;
         self.leftVC = leftVC;
-        leftVC.view.frame = self.view.frame;
+        leftVC.view.frame = self.view.bounds;
+        mainVC.view.frame = self.view.bounds;
         [self addChildViewController:mainVC];
         [self addChildViewController:leftVC];
-        UIImageView *imageV = [[UIImageView alloc] initWithFrame:self.view.frame];
-        imageV.image = image;
-        [self.view addSubview:imageV];
-        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
-        [self.mainVC.view addGestureRecognizer:pan];
-        
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
-        [tap setNumberOfTapsRequired:1];
-        [_mainVC.view addGestureRecognizer:tap];
-        
-        
-        _leftVC.view.hidden = YES;
         [self.view addSubview:_leftVC.view];
         [self.view addSubview:_mainVC.view];
         
@@ -42,9 +31,28 @@
     }
     return self;
 }
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+//            UIImageView *imageV = [[UIImageView alloc] initWithFrame:self.view.frame];
+//            imageV.image = image;
+//            [self.view addSubview:imageV];
+//    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+//    [self.mainVC.view addGestureRecognizer:pan];
+
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTap:)];
+//    [tap setNumberOfTapsRequired:1];
+    [_mainVC.view addGestureRecognizer:tap];
+   
+    
+    _leftVC.view.hidden = YES;
+}
+
+
 // 滑动手势
 - (void)handlePan:(UIPanGestureRecognizer *)pan {
-    NSLog(@"pan:%@",pan);
+//    NSLog(@"pan:%@",pan);
     
     CGPoint point = [pan translationInView:self.view];
     self.scalef += point.x*_speedF;
@@ -102,6 +110,7 @@
 }
 //  展示左视图
 - (void)showLeftV {
+    _leftVC.view.hidden = NO;
     [UIView beginAnimations:nil context:nil];
     _mainVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0); // 缩放系数
     _mainVC.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width*5/4,[UIScreen mainScreen].bounds.size.height/2);

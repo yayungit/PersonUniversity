@@ -10,8 +10,9 @@
 #import "TabbarViewController.h"
 #import "LeftViewController.h"
 #import "LockerViewController.h"
+#import "MainViewController.h"
 @interface AppDelegate ()
-
+@property (nonatomic, strong) LockerViewController *lockerViewController;
 @end
 
 @implementation AppDelegate
@@ -24,11 +25,16 @@
     LeftViewController *leftVC = [[LeftViewController alloc] init];
     
     LockerViewController *lockerViewController = [[LockerViewController alloc] initWithMainVC:tabbarVC leftVC:leftVC backGroundImage:nil];
+    _lockerViewController = lockerViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = lockerViewController;
     [self.window makeKeyAndVisible ];
-    
+    UIViewController *vc = (MainViewController *)tabbarVC.mainVC;
+    vc.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(lefClick:)];
     return YES;
+}
+- (void)lefClick:(UIBarButtonItem *)item {
+    [_lockerViewController showLeftV];
 }
 
 

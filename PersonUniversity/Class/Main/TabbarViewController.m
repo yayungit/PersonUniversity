@@ -10,7 +10,8 @@
 #import "NavigationViewController.h"
 #import "LockerViewController.h"
 #import "MainViewController.h"
-@interface TabbarViewController ()
+#import "CommunityViewController.h"
+@interface TabbarViewController ()<UITabBarDelegate>
 
 @end
 
@@ -18,9 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MainViewController *mainVC = [[MainViewController alloc] init];
-    NavigationViewController *naVC = [[NavigationViewController alloc] initWithRootViewController:mainVC];
-    [self addChildViewController:naVC];
+    _mainVC = [[MainViewController alloc] init];
+    NavigationViewController *naVC = [[NavigationViewController alloc] initWithRootViewController:_mainVC];
+    
+    CommunityViewController *communityVC = [[CommunityViewController alloc] init];
+    NavigationViewController *communityNaVC = [[NavigationViewController alloc] initWithRootViewController:communityVC];
+    
+    self.viewControllers = @[naVC,communityNaVC];
+    
+    NSArray *titles = @[@"Home",@"Community"];
+    [self.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        obj.title = titles[idx];
+    }];
+    [[UITabBar appearance] setTintColor:[UIColor purpleColor]];
+    
 }
 
 - (void)didReceiveMemoryWarning {

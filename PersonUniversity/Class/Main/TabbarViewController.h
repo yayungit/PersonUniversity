@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class MainViewController;
 @interface TabbarViewController : UITabBarController
-
+@property (nonatomic, strong) MainViewController *mainVC;
 @end

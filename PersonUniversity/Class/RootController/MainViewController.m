@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-
+#import "LockerViewController.h"
 @interface MainViewController ()
 
 @end
@@ -17,7 +17,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.view.backgroundColor = [UIColor grayColor];
+    self.navigationItem.title = @"Home";
+    self.tabBarItem.title = @"Home";
+}
+- (void)person:(UIBarButtonItem *)bar {
+    LockerViewController *lo = [[LockerViewController alloc] init];
+    [lo showLeftV];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 300, 375, 200)];
+    view.backgroundColor = [UIColor redColor];
+    [self.view addSubview:view];
+        view.frame = CGRectOffset(view.frame,0 , 300);
+        float height = 200;
+        [UIView animateWithDuration:.5
+                              delay:0
+                            options:UIViewAnimationOptionCurveEaseInOut
+                         animations:^{
+                             
+                             
+                             view.center = CGPointMake(view.center.x, self.view.frame.size.height - height/2);
+                         }
+                         completion:^(BOOL finished) {
+                             
+                             
+                         }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
