@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Community";
-    self.tabBarItem.title = @"Community";
     self.view.backgroundColor = [UIColor yellowColor];
     // Do any additional setup after loading the view from its nib.
 }

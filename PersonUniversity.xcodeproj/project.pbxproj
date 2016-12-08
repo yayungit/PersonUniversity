@@ -49,6 +49,7 @@
 		0D0D6DC11DE83ED000FA3D1A /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
 		0D0D6DC21DE83ED000FA3D1A /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
 		0D0D6DC31DE83ED000FA3D1A /* CommunityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityViewController.xib; sourceTree = "<group>"; };
+		0DB3918D1DF9500A00E9F4BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0DCDFED51DD1C99F009F31F9 /* PersonUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DCDFEE91DD1C99F009F31F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,6 +143,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0DB3918C1DF94FDC00E9F4BE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0DB3918D1DF9500A00E9F4BE /* PrefixHeader.pch */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		0DCDFECC1DD1C99F009F31F9 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */,
+				0DB3918C1DF94FDC00E9F4BE /* Tools */,
 				0DCDFF0B1DD1CA95009F31F9 /* AppDelegate */,
 				0DCDFF0F1DD1CAA4009F31F9 /* Class */,
 				0DCDFEE91DD1C99F009F31F9 /* Info.plist */,
@@ -310,6 +320,7 @@
 				TargetAttributes = {
 					0DCDFED41DD1C99F009F31F9 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = U9GXWMVM3V;
 						ProvisioningStyle = Automatic;
 					};
 					0DCDFEED1DD1C99F009F31F9 = {
@@ -524,6 +535,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U9GXWMVM3V;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PersonUniversity/Tools/PrefixHeader.pch";
 				INFOPLIST_FILE = PersonUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
@@ -535,6 +549,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U9GXWMVM3V;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PersonUniversity/Tools/PrefixHeader.pch";
 				INFOPLIST_FILE = PersonUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;

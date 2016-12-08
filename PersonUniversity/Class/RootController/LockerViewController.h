@@ -12,7 +12,7 @@
 
 @property (nonatomic, strong) UIViewController *mainVC;
 @property (nonatomic, strong) UIViewController *leftVC;
-@property (nonatomic, assign) CGFloat speedF; // 设置一个滑动速度
+
 //  初始化方法
 - (instancetype)initWithMainVC:(UIViewController *)mainVC leftVC:(UIViewController *)leftVC backGroundImage:(UIImage *)image;
 //  展示主视图

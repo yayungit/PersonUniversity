@@ -11,7 +11,7 @@
 #import "LockerViewController.h"
 #import "MainViewController.h"
 #import "CommunityViewController.h"
-@interface TabbarViewController ()<UITabBarDelegate>
+@interface TabbarViewController ()
 
 @end
 
@@ -29,6 +29,7 @@
     
     NSArray *titles = @[@"Home",@"Community"];
     [self.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        self.selectedIndex = 0;
         obj.title = titles[idx];
     }];
     [[UITabBar appearance] setTintColor:[UIColor purpleColor]];
@@ -39,7 +40,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    YYLog(@"--------");
+}
 /*
 #pragma mark - Navigation
 

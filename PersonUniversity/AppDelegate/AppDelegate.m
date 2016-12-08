@@ -35,6 +35,7 @@
 }
 - (void)lefClick:(UIBarButtonItem *)item {
     [_lockerViewController showLeftV];
+    
 }
 
 

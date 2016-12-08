@@ -8,57 +8,44 @@
 
 #import "MainViewController.h"
 #import "LockerViewController.h"
-@interface MainViewController ()
-
+@interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
+{
+    NSArray *classArray;
+}
 @end
 
 @implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     self.navigationItem.title = @"Home";
-    self.tabBarItem.title = @"Home";
+    classArray = @[@"addSubView动画",@"顶部分类类别"];
+    [self configUI];
 }
-- (void)person:(UIBarButtonItem *)bar {
-    LockerViewController *lo = [[LockerViewController alloc] init];
-    [lo showLeftV];
+// MARK: CONFIG-UI
+- (void)configUI {
+    UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kSCREENWIDTH,kSCREENHEIGHT ) style:(UITableViewStylePlain)];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [self.view addSubview:tableView];
+}
+// MARK: UITableViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return classArray.count;
 }
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 300, 375, 200)];
-    view.backgroundColor = [UIColor redColor];
-    [self.view addSubview:view];
-        view.frame = CGRectOffset(view.frame,0 , 300);
-        float height = 200;
-        [UIView animateWithDuration:.5
-                              delay:0
-                            options:UIViewAnimationOptionCurveEaseInOut
-                         animations:^{
-                             
-                             
-                             view.center = CGPointMake(view.center.x, self.view.frame.size.height - height/2);
-                         }
-                         completion:^(BOOL finished) {
-                             
-                             
-                         }];
-    
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:(UITableViewCellStyleSubtitle) reuseIdentifier:@"cell"];
+        cell.textLabel.text = classArray[indexPath.row];
+    }
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
