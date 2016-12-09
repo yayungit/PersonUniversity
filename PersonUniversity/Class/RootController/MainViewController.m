@@ -8,6 +8,8 @@
 
 #import "MainViewController.h"
 #import "LockerViewController.h"
+#import "SegmentViewController.h"
+
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
     NSArray *classArray;
@@ -42,6 +44,23 @@
     }
     return cell;
 }
+#pragma mark - UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 0: {
+            
+        }
+            break;
+        case 1: {
+            SegmentViewController *segmentController = [[SegmentViewController alloc] init];
+            [self.navigationController pushViewController:segmentController animated:YES];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

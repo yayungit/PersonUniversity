@@ -11,6 +11,9 @@
 		0D0BC0411DE71A4D000134B8 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0BC0401DE71A4D000134B8 /* NavigationViewController.m */; };
 		0D0D6DC41DE83ED000FA3D1A /* CommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0D6DC21DE83ED000FA3D1A /* CommunityViewController.m */; };
 		0D0D6DC51DE83ED000FA3D1A /* CommunityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0D6DC31DE83ED000FA3D1A /* CommunityViewController.xib */; };
+		0D8720011DFA5C6100728F35 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D871FFD1DFA5C6100728F35 /* SegmentViewController.m */; };
+		0D8720021DFA5C6100728F35 /* SegmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D871FFE1DFA5C6100728F35 /* SegmentViewController.xib */; };
+		0D8720051DFA5C9100728F35 /* SegmentCustonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8720041DFA5C9100728F35 /* SegmentCustonView.m */; };
 		0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */; };
 		0DCDFEF31DD1C99F009F31F9 /* PersonUniversityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFEF21DD1C99F009F31F9 /* PersonUniversityTests.m */; };
 		0DCDFEFE1DD1C99F009F31F9 /* PersonUniversityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFEFD1DD1C99F009F31F9 /* PersonUniversityUITests.m */; };
@@ -49,6 +52,11 @@
 		0D0D6DC11DE83ED000FA3D1A /* CommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommunityViewController.h; sourceTree = "<group>"; };
 		0D0D6DC21DE83ED000FA3D1A /* CommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommunityViewController.m; sourceTree = "<group>"; };
 		0D0D6DC31DE83ED000FA3D1A /* CommunityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommunityViewController.xib; sourceTree = "<group>"; };
+		0D871FFC1DFA5C6100728F35 /* SegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
+		0D871FFD1DFA5C6100728F35 /* SegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
+		0D871FFE1DFA5C6100728F35 /* SegmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentViewController.xib; sourceTree = "<group>"; };
+		0D8720031DFA5C9100728F35 /* SegmentCustonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentCustonView.h; sourceTree = "<group>"; };
+		0D8720041DFA5C9100728F35 /* SegmentCustonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentCustonView.m; sourceTree = "<group>"; };
 		0DB3918D1DF9500A00E9F4BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0DCDFED51DD1C99F009F31F9 /* PersonUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +151,50 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0D871FF41DFA5B5B00728F35 /* SubClass */ = {
+			isa = PBXGroup;
+			children = (
+				0D871FF51DFA5B8300728F35 /* 顶部分类滑动 */,
+			);
+			path = SubClass;
+			sourceTree = "<group>";
+		};
+		0D871FF51DFA5B8300728F35 /* 顶部分类滑动 */ = {
+			isa = PBXGroup;
+			children = (
+				0D871FFB1DFA5C6100728F35 /* Controller */,
+				0D871FFF1DFA5C6100728F35 /* Model */,
+				0D8720001DFA5C6100728F35 /* View */,
+			);
+			path = "顶部分类滑动";
+			sourceTree = "<group>";
+		};
+		0D871FFB1DFA5C6100728F35 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D871FFC1DFA5C6100728F35 /* SegmentViewController.h */,
+				0D871FFD1DFA5C6100728F35 /* SegmentViewController.m */,
+				0D871FFE1DFA5C6100728F35 /* SegmentViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D871FFF1DFA5C6100728F35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D8720001DFA5C6100728F35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D8720031DFA5C9100728F35 /* SegmentCustonView.h */,
+				0D8720041DFA5C9100728F35 /* SegmentCustonView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0DB3918C1DF94FDC00E9F4BE /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +274,7 @@
 		0DCDFF0F1DD1CAA4009F31F9 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0D871FF41DFA5B5B00728F35 /* SubClass */,
 				0D0D6DBD1DE83EB200FA3D1A /* Community（社区） */,
 				0D0BC03B1DE719D5000134B8 /* Main */,
 				0DCDFF1C1DD1CBD6009F31F9 /* RootController */,
@@ -360,6 +413,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8720021DFA5C6100728F35 /* SegmentViewController.xib in Resources */,
 				0D0D6DC51DE83ED000FA3D1A /* CommunityViewController.xib in Resources */,
 				0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */,
 				0DCDFF291DD1CCA3009F31F9 /* LeftViewController.xib in Resources */,
@@ -389,7 +443,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D8720011DFA5C6100728F35 /* SegmentViewController.m in Sources */,
 				0D0D6DC41DE83ED000FA3D1A /* CommunityViewController.m in Sources */,
+				0D8720051DFA5C9100728F35 /* SegmentCustonView.m in Sources */,
 				0DCDFF241DD1CC49009F31F9 /* LockerViewController.m in Sources */,
 				0DCDFF281DD1CCA3009F31F9 /* LeftViewController.m in Sources */,
 				0D0BC0411DE71A4D000134B8 /* NavigationViewController.m in Sources */,
