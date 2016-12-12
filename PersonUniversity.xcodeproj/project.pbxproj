@@ -14,6 +14,7 @@
 		0D8720011DFA5C6100728F35 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D871FFD1DFA5C6100728F35 /* SegmentViewController.m */; };
 		0D8720021DFA5C6100728F35 /* SegmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D871FFE1DFA5C6100728F35 /* SegmentViewController.xib */; };
 		0D8720051DFA5C9100728F35 /* SegmentCustonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8720041DFA5C9100728F35 /* SegmentCustonView.m */; };
+		0D93DE871DFEDBA0004FF0BF /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93DE861DFEDBA0004FF0BF /* UIView+frame.m */; };
 		0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */; };
 		0DCDFEF31DD1C99F009F31F9 /* PersonUniversityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFEF21DD1C99F009F31F9 /* PersonUniversityTests.m */; };
 		0DCDFEFE1DD1C99F009F31F9 /* PersonUniversityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFEFD1DD1C99F009F31F9 /* PersonUniversityUITests.m */; };
@@ -57,7 +58,9 @@
 		0D871FFE1DFA5C6100728F35 /* SegmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentViewController.xib; sourceTree = "<group>"; };
 		0D8720031DFA5C9100728F35 /* SegmentCustonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentCustonView.h; sourceTree = "<group>"; };
 		0D8720041DFA5C9100728F35 /* SegmentCustonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentCustonView.m; sourceTree = "<group>"; };
-		0DB3918D1DF9500A00E9F4BE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0D93DE821DFEDAF2004FF0BF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0D93DE851DFEDBA0004FF0BF /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
+		0D93DE861DFEDBA0004FF0BF /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		0DCDFED51DD1C99F009F31F9 /* PersonUniversity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonUniversity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DCDFEE91DD1C99F009F31F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,12 +198,36 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		0DB3918C1DF94FDC00E9F4BE /* Tools */ = {
+		0D93DE801DFEDAF2004FF0BF /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				0DB3918D1DF9500A00E9F4BE /* PrefixHeader.pch */,
+				0D93DE841DFEDB14004FF0BF /* UIView */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		0D93DE811DFEDAF2004FF0BF /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				0D93DE821DFEDAF2004FF0BF /* PrefixHeader.pch */,
+			);
+			path = PCH;
+			sourceTree = "<group>";
+		};
+		0D93DE831DFEDAF2004FF0BF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		0D93DE841DFEDB14004FF0BF /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				0D93DE851DFEDBA0004FF0BF /* UIView+frame.h */,
+				0D93DE861DFEDBA0004FF0BF /* UIView+frame.m */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		0DCDFECC1DD1C99F009F31F9 = {
@@ -227,7 +254,9 @@
 			isa = PBXGroup;
 			children = (
 				0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */,
-				0DB3918C1DF94FDC00E9F4BE /* Tools */,
+				0D93DE801DFEDAF2004FF0BF /* Category */,
+				0D93DE811DFEDAF2004FF0BF /* PCH */,
+				0D93DE831DFEDAF2004FF0BF /* Tools */,
 				0DCDFF0B1DD1CA95009F31F9 /* AppDelegate */,
 				0DCDFF0F1DD1CAA4009F31F9 /* Class */,
 				0DCDFEE91DD1C99F009F31F9 /* Info.plist */,
@@ -450,6 +479,7 @@
 				0DCDFF281DD1CCA3009F31F9 /* LeftViewController.m in Sources */,
 				0D0BC0411DE71A4D000134B8 /* NavigationViewController.m in Sources */,
 				0D0BC03E1DE71A26000134B8 /* TabbarViewController.m in Sources */,
+				0D93DE871DFEDBA0004FF0BF /* UIView+frame.m in Sources */,
 				0DCDFF181DD1CAAF009F31F9 /* main.m in Sources */,
 				0DCDFF201DD1CC05009F31F9 /* MainViewController.m in Sources */,
 				0DCDFF0E1DD1CA95009F31F9 /* AppDelegate.m in Sources */,

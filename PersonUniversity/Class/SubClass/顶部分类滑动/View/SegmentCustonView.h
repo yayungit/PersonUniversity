@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @protocol ClassButtonClickProtocol <NSObject>
 @optional
 - (void)didClassButtonClick:(UIButton *)button andButtonIndex:(NSInteger)index;
