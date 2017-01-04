@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "LockerViewController.h"
 #import "SegmentViewController.h"
+#import "TimerViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -21,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
-    classArray = @[@"addSubView动画",@"顶部分类类别"];
+    classArray = @[@"addSubView动画",@"顶部分类类别",@"多个cell添加定时器"];
     [self configUI];
 }
 // MARK: CONFIG-UI
@@ -54,6 +55,11 @@
         case 1: {
             SegmentViewController *segmentController = [[SegmentViewController alloc] init];
             [self.navigationController pushViewController:segmentController animated:YES];
+        }
+            break;
+        case 2: {
+            TimerViewController *timerViewController = [[TimerViewController alloc] init];
+            [self.navigationController pushViewController:timerViewController animated:YES];
         }
             break;
         default:
