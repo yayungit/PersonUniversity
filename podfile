@@ -1,0 +1,12 @@
+platform :ios, ‘8.0’
+
+inhibit_all_warnings!
+target 'PersonUniversity' do
+# 其他来源
+#source 'https://github.com/artsy/Specs.git'
+ #默认的源地址
+#source 'https://github.com/CocoaPods/Specs.git'
+pod 'BaiduMapKit', '~> 3.2.1'
+pod ‘UMengSocial’
+
+end

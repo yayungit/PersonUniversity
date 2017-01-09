@@ -110,9 +110,11 @@
 }
 //  展示左视图
 - (void)showLeftV {
+    _leftVC.view.hidden = NO;
     alphaView.hidden = NO;
     [_mainVC.view bringSubviewToFront:alphaView];
     [UIView beginAnimations:nil context:nil];
+    // 主视图偏移了1/4的center。 所以此时左视图还可以看到屏幕的3/4；操作左视图的时候 左视图的可是宽度只有屏幕的3/4；
     _mainVC.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0); // 缩放系数
     _mainVC.view.center = CGPointMake([UIScreen mainScreen].bounds.size.width*5/4,[UIScreen mainScreen].bounds.size.height/2);
     [UIView commitAnimations];

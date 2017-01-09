@@ -13,6 +13,20 @@
 		0D0D6DC51DE83ED000FA3D1A /* CommunityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0D6DC31DE83ED000FA3D1A /* CommunityViewController.xib */; };
 		0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE21D1E16401B00D4219C /* TimerViewController.m */; };
 		0D5DE2211E16546600D4219C /* TimerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE2201E16546600D4219C /* TimerManger.m */; };
+		0D7FCB7A1E237B3F00D4429E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB791E237B3F00D4429E /* SystemConfiguration.framework */; };
+		0D7FCB7C1E237B4E00D4429E /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB7B1E237B4E00D4429E /* CoreTelephony.framework */; };
+		0D7FCB7E1E237B7200D4429E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB7D1E237B7200D4429E /* libsqlite3.tbd */; };
+		0D7FCB801E237B8100D4429E /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB7F1E237B8100D4429E /* libc++.tbd */; };
+		0D7FCB821E237B8D00D4429E /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB811E237B8D00D4429E /* libz.tbd */; };
+		0D7FCB841E237C5400D4429E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB831E237C5400D4429E /* CoreLocation.framework */; };
+		0D7FCB861E237C6100D4429E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB851E237C6100D4429E /* QuartzCore.framework */; };
+		0D7FCB881E237C6C00D4429E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB871E237C6C00D4429E /* OpenGLES.framework */; };
+		0D7FCB8A1E237C8500D4429E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB891E237C8500D4429E /* CoreGraphics.framework */; };
+		0D7FCB8C1E237C9100D4429E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB8B1E237C9100D4429E /* Security.framework */; };
+		0D7FCB8E1E237C9E00D4429E /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB8D1E237C9E00D4429E /* libsqlite3.0.tbd */; };
+		0D7FCB901E237CD500D4429E /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB8F1E237CD500D4429E /* libstdc++.6.0.9.tbd */; };
+		0D7FCB931E237D1D00D4429E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB911E237D1D00D4429E /* libcrypto.a */; };
+		0D7FCB941E237D1D00D4429E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB921E237D1D00D4429E /* libssl.a */; };
 		0D8720011DFA5C6100728F35 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D871FFD1DFA5C6100728F35 /* SegmentViewController.m */; };
 		0D8720021DFA5C6100728F35 /* SegmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D871FFE1DFA5C6100728F35 /* SegmentViewController.xib */; };
 		0D8720051DFA5C9100728F35 /* SegmentCustonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8720041DFA5C9100728F35 /* SegmentCustonView.m */; };
@@ -30,6 +44,7 @@
 		0DCDFF241DD1CC49009F31F9 /* LockerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFF231DD1CC49009F31F9 /* LockerViewController.m */; };
 		0DCDFF281DD1CCA3009F31F9 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFF261DD1CCA3009F31F9 /* LeftViewController.m */; };
 		0DCDFF291DD1CCA3009F31F9 /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDFF271DD1CCA3009F31F9 /* LeftViewController.xib */; };
+		73EC8C504A582E18334FD8D3 /* libPods-PersonUniversity.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF22A26343ED101EC57E109 /* libPods-PersonUniversity.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +76,20 @@
 		0D5DE21D1E16401B00D4219C /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0D5DE21F1E16546600D4219C /* TimerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManger.h; sourceTree = "<group>"; };
 		0D5DE2201E16546600D4219C /* TimerManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerManger.m; sourceTree = "<group>"; };
+		0D7FCB791E237B3F00D4429E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0D7FCB7B1E237B4E00D4429E /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0D7FCB7D1E237B7200D4429E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0D7FCB7F1E237B8100D4429E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0D7FCB811E237B8D00D4429E /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0D7FCB831E237C5400D4429E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0D7FCB851E237C6100D4429E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0D7FCB871E237C6C00D4429E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0D7FCB891E237C8500D4429E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0D7FCB8B1E237C9100D4429E /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0D7FCB8D1E237C9E00D4429E /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		0D7FCB8F1E237CD500D4429E /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		0D7FCB911E237D1D00D4429E /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
+		0D7FCB921E237D1D00D4429E /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
 		0D871FFC1DFA5C6100728F35 /* SegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
 		0D871FFD1DFA5C6100728F35 /* SegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
 		0D871FFE1DFA5C6100728F35 /* SegmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentViewController.xib; sourceTree = "<group>"; };
@@ -93,6 +122,9 @@
 		0DCDFF251DD1CCA3009F31F9 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		0DCDFF261DD1CCA3009F31F9 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		0DCDFF271DD1CCA3009F31F9 /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		2C5C257387AB570EF8B99B65 /* Pods-PersonUniversity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonUniversity.release.xcconfig"; path = "Pods/Target Support Files/Pods-PersonUniversity/Pods-PersonUniversity.release.xcconfig"; sourceTree = "<group>"; };
+		6DF22A26343ED101EC57E109 /* libPods-PersonUniversity.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PersonUniversity.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F02808F33D5FA33E5E47048D /* Pods-PersonUniversity.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonUniversity.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PersonUniversity/Pods-PersonUniversity.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +132,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7FCB931E237D1D00D4429E /* libcrypto.a in Frameworks */,
+				0D7FCB941E237D1D00D4429E /* libssl.a in Frameworks */,
+				0D7FCB901E237CD500D4429E /* libstdc++.6.0.9.tbd in Frameworks */,
+				0D7FCB8E1E237C9E00D4429E /* libsqlite3.0.tbd in Frameworks */,
+				0D7FCB8C1E237C9100D4429E /* Security.framework in Frameworks */,
+				0D7FCB8A1E237C8500D4429E /* CoreGraphics.framework in Frameworks */,
+				0D7FCB881E237C6C00D4429E /* OpenGLES.framework in Frameworks */,
+				0D7FCB861E237C6100D4429E /* QuartzCore.framework in Frameworks */,
+				0D7FCB841E237C5400D4429E /* CoreLocation.framework in Frameworks */,
+				0D7FCB821E237B8D00D4429E /* libz.tbd in Frameworks */,
+				0D7FCB801E237B8100D4429E /* libc++.tbd in Frameworks */,
+				0D7FCB7E1E237B7200D4429E /* libsqlite3.tbd in Frameworks */,
+				0D7FCB7C1E237B4E00D4429E /* CoreTelephony.framework in Frameworks */,
+				0D7FCB7A1E237B3F00D4429E /* SystemConfiguration.framework in Frameworks */,
+				73EC8C504A582E18334FD8D3 /* libPods-PersonUniversity.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +326,8 @@
 				0DCDFEF11DD1C99F009F31F9 /* PersonUniversityTests */,
 				0DCDFEFC1DD1C99F009F31F9 /* PersonUniversityUITests */,
 				0DCDFED61DD1C99F009F31F9 /* Products */,
+				CF6190727E2D838B616601D7 /* Pods */,
+				6EA52BA5F934CC420E1E8582 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -377,6 +426,37 @@
 			path = RootController;
 			sourceTree = "<group>";
 		};
+		6EA52BA5F934CC420E1E8582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D7FCB911E237D1D00D4429E /* libcrypto.a */,
+				0D7FCB921E237D1D00D4429E /* libssl.a */,
+				0D7FCB8F1E237CD500D4429E /* libstdc++.6.0.9.tbd */,
+				0D7FCB8D1E237C9E00D4429E /* libsqlite3.0.tbd */,
+				0D7FCB8B1E237C9100D4429E /* Security.framework */,
+				0D7FCB891E237C8500D4429E /* CoreGraphics.framework */,
+				0D7FCB871E237C6C00D4429E /* OpenGLES.framework */,
+				0D7FCB851E237C6100D4429E /* QuartzCore.framework */,
+				0D7FCB831E237C5400D4429E /* CoreLocation.framework */,
+				0D7FCB811E237B8D00D4429E /* libz.tbd */,
+				0D7FCB7F1E237B8100D4429E /* libc++.tbd */,
+				0D7FCB7D1E237B7200D4429E /* libsqlite3.tbd */,
+				0D7FCB7B1E237B4E00D4429E /* CoreTelephony.framework */,
+				0D7FCB791E237B3F00D4429E /* SystemConfiguration.framework */,
+				6DF22A26343ED101EC57E109 /* libPods-PersonUniversity.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF6190727E2D838B616601D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F02808F33D5FA33E5E47048D /* Pods-PersonUniversity.debug.xcconfig */,
+				2C5C257387AB570EF8B99B65 /* Pods-PersonUniversity.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -384,9 +464,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DCDFF021DD1C99F009F31F9 /* Build configuration list for PBXNativeTarget "PersonUniversity" */;
 			buildPhases = (
+				D25AB56D28DAE14CEFD5B8F1 /* [CP] Check Pods Manifest.lock */,
 				0DCDFED11DD1C99F009F31F9 /* Sources */,
 				0DCDFED21DD1C99F009F31F9 /* Frameworks */,
 				0DCDFED31DD1C99F009F31F9 /* Resources */,
+				7BCF06AB6179D8EAE2F727DC /* [CP] Embed Pods Frameworks */,
+				ED76957ADC3C549D64911E74 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -509,6 +592,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7BCF06AB6179D8EAE2F727DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonUniversity/Pods-PersonUniversity-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D25AB56D28DAE14CEFD5B8F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED76957ADC3C549D64911E74 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PersonUniversity/Pods-PersonUniversity-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0DCDFED11DD1C99F009F31F9 /* Sources */ = {
@@ -665,13 +796,19 @@
 		};
 		0DCDFF031DD1C99F009F31F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F02808F33D5FA33E5E47048D /* Pods-PersonUniversity.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U9GXWMVM3V;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PersonUniversity/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = PersonUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -679,13 +816,19 @@
 		};
 		0DCDFF041DD1C99F009F31F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C5C257387AB570EF8B99B65 /* Pods-PersonUniversity.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U9GXWMVM3V;
+				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PersonUniversity/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = PersonUniversity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

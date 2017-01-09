@@ -14,7 +14,8 @@
 @interface AppDelegate ()
 @property (nonatomic, strong) LockerViewController *lockerViewController;
 @end
-
+static NSString *const BMAK = @"Lv0QmjMHDnQ9iO6sEyBNg01XWnhbExnq";
+static NSString *const UMAppKey = @"58733ab375ca35049e000aad";
 @implementation AppDelegate
 
 
@@ -23,7 +24,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     TabbarViewController *tabbarVC = [[TabbarViewController alloc] init];
     LeftViewController *leftVC = [[LeftViewController alloc] init];
-    
     LockerViewController *lockerViewController = [[LockerViewController alloc] initWithMainVC:tabbarVC leftVC:leftVC backGroundImage:nil];
     _lockerViewController = lockerViewController;
     self.window.backgroundColor = [UIColor whiteColor];
@@ -33,9 +33,9 @@
     vc.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(lefClick:)];
     return YES;
 }
+// 展示左视图
 - (void)lefClick:(UIBarButtonItem *)item {
     [_lockerViewController showLeftV];
-    
 }
 
 
