@@ -11,6 +11,8 @@
 #import "LeftViewController.h"
 #import "LockerViewController.h"
 #import "MainViewController.h"
+
+
 @interface AppDelegate ()
 @property (nonatomic, strong) LockerViewController *lockerViewController;
 @end
@@ -21,6 +23,12 @@ static NSString *const UMAppKey = @"58733ab375ca35049e000aad";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    _mapManger = [[BMKMapManager alloc] init];
+    BOOL ret = [_mapManger start:BMAK generalDelegate:nil];
+    if (!ret) {
+        YYLog(@"manger start failed!");
+    }
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     TabbarViewController *tabbarVC = [[TabbarViewController alloc] init];
     LeftViewController *leftVC = [[LeftViewController alloc] init];
