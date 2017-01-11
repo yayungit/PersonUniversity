@@ -36,7 +36,7 @@
 		0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */; };
 		0DCDFEF31DD1C99F009F31F9 /* PersonUniversityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFEF21DD1C99F009F31F9 /* PersonUniversityTests.m */; };
 		0DCDFEFE1DD1C99F009F31F9 /* PersonUniversityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFEFD1DD1C99F009F31F9 /* PersonUniversityUITests.m */; };
-		0DCDFF0E1DD1CA95009F31F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFF0D1DD1CA95009F31F9 /* AppDelegate.m */; };
+		0DCDFF0E1DD1CA95009F31F9 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFF0D1DD1CA95009F31F9 /* AppDelegate.mm */; };
 		0DCDFF171DD1CAAF009F31F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDFF141DD1CAAF009F31F9 /* LaunchScreen.storyboard */; };
 		0DCDFF181DD1CAAF009F31F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFF161DD1CAAF009F31F9 /* main.m */; };
 		0DCDFF201DD1CC05009F31F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCDFF1E1DD1CC05009F31F9 /* MainViewController.m */; };
@@ -111,7 +111,7 @@
 		0DCDFEFD1DD1C99F009F31F9 /* PersonUniversityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonUniversityUITests.m; sourceTree = "<group>"; };
 		0DCDFEFF1DD1C99F009F31F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DCDFF0C1DD1CA95009F31F9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0DCDFF0D1DD1CA95009F31F9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0DCDFF0D1DD1CA95009F31F9 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		0DCDFF151DD1CAAF009F31F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DCDFF161DD1CAAF009F31F9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0DCDFF1D1DD1CC05009F31F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -386,7 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				0DCDFF0C1DD1CA95009F31F9 /* AppDelegate.h */,
-				0DCDFF0D1DD1CA95009F31F9 /* AppDelegate.m */,
+				0DCDFF0D1DD1CA95009F31F9 /* AppDelegate.mm */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -659,7 +659,7 @@
 				0D93DE871DFEDBA0004FF0BF /* UIView+frame.m in Sources */,
 				0DCDFF181DD1CAAF009F31F9 /* main.m in Sources */,
 				0DCDFF201DD1CC05009F31F9 /* MainViewController.m in Sources */,
-				0DCDFF0E1DD1CA95009F31F9 /* AppDelegate.m in Sources */,
+				0DCDFF0E1DD1CA95009F31F9 /* AppDelegate.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -800,7 +800,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U9GXWMVM3V;
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				ENABLE_BITCODE = NO;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PersonUniversity/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = PersonUniversity/Info.plist;
@@ -820,7 +821,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U9GXWMVM3V;
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
+				ENABLE_BITCODE = NO;
+				GCC_INPUT_FILETYPE = automatic;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PersonUniversity/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = PersonUniversity/Info.plist;
