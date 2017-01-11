@@ -163,7 +163,7 @@
         NSString* showmeg;
         titleStr = @"反向地理编码";
         showmeg = [NSString stringWithFormat:@"%@",item.title];
-        YYLog(@"subtitle====%@", item.subtitle);
+        YYLog(@"subtitle====%@,titile = %@", item.subtitle,showmeg);
 //        UIAlertView *myAlertView = [[UIAlertView alloc] initWithTitle:titleStr message:showmeg delegate:self cancelButtonTitle:nil otherButtonTitles:@"确定",nil];
 //        [myAlertView show];
     }
