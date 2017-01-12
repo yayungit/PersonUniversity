@@ -11,13 +11,15 @@
 #import "LeftViewController.h"
 #import "LockerViewController.h"
 #import "MainViewController.h"
-
-
+#import <UMSocialCore/UMSocialCore.h>
+#import <WXApi.h>
 @interface AppDelegate ()
 @property (nonatomic, strong) LockerViewController *lockerViewController;
 @end
 static NSString *const BMAK = @"Lv0QmjMHDnQ9iO6sEyBNg01XWnhbExnq";
 static NSString *const UMAppKey = @"58733ab375ca35049e000aad";
+static NSString *const WX_AppKey = @"wx9ed67d121cd660b1";
+static NSString *const WX_AppSecret = @"9b65d6206d8aaf6070f359bce9177cfc";
 @implementation AppDelegate
 
 
@@ -39,6 +41,10 @@ static NSString *const UMAppKey = @"58733ab375ca35049e000aad";
     [self.window makeKeyAndVisible ];
     UIViewController *vc = (MainViewController *)tabbarVC.mainVC;
     vc.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(lefClick:)];
+    
+    [[UMSocialManager defaultManager] setUmSocialAppkey:UMAppKey];
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:WX_AppKey appSecret:WX_AppSecret redirectURL:nil];
+    [WXApi registerApp:WX_AppKey];
     return YES;
 }
 // 展示左视图
@@ -46,7 +52,13 @@ static NSString *const UMAppKey = @"58733ab375ca35049e000aad";
     [_lockerViewController showLeftV];
 }
 
-
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    BOOL resule = [[UMSocialManager defaultManager] handleOpenURL:url];
+    if (!resule) {
+        
+    }
+    return resule;
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

@@ -1,15 +1,19 @@
 PODS:
   - BaiduMapKit (3.2.1)
-  - UMengSocial (5.0)
+  - UMengUShare/Core (6.2.1):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.2.1)
+  - UMengUShare/Social/WeChat (6.2.1):
+    - UMengUShare/Core
 
 DEPENDENCIES:
   - BaiduMapKit (~> 3.2.1)
-  - UMengSocial
+  - UMengUShare/Social/WeChat
 
 SPEC CHECKSUMS:
   BaiduMapKit: 9c748785aa3dddfc41dcb70c14b21ce32f680930
-  UMengSocial: 48b67179c492a8cf7803fbb0438b8f55432e2fc1
+  UMengUShare: 583ac067e747c66429d5063896da0e77c4fe7688
 
-PODFILE CHECKSUM: b25b119497c7180aad73481ad6b354f814089de0
+PODFILE CHECKSUM: dbbe65434b9eddda606fe84552374e01bb1e25a5
 
 COCOAPODS: 1.1.1

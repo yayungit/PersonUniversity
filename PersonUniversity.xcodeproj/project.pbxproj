@@ -27,6 +27,8 @@
 		0D7FCB901E237CD500D4429E /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB8F1E237CD500D4429E /* libstdc++.6.0.9.tbd */; };
 		0D7FCB931E237D1D00D4429E /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB911E237D1D00D4429E /* libcrypto.a */; };
 		0D7FCB941E237D1D00D4429E /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB921E237D1D00D4429E /* libssl.a */; };
+		0D7FCBAA1E277E3500D4429E /* libSocialWeChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCBA81E277E3500D4429E /* libSocialWeChat.a */; };
+		0D7FCBAB1E277E3500D4429E /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCBA91E277E3500D4429E /* libWeChatSDK.a */; };
 		0D8720011DFA5C6100728F35 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D871FFD1DFA5C6100728F35 /* SegmentViewController.m */; };
 		0D8720021DFA5C6100728F35 /* SegmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D871FFE1DFA5C6100728F35 /* SegmentViewController.xib */; };
 		0D8720051DFA5C9100728F35 /* SegmentCustonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8720041DFA5C9100728F35 /* SegmentCustonView.m */; };
@@ -90,6 +92,8 @@
 		0D7FCB8F1E237CD500D4429E /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		0D7FCB911E237D1D00D4429E /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
 		0D7FCB921E237D1D00D4429E /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
+		0D7FCBA81E277E3500D4429E /* libSocialWeChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSocialWeChat.a; path = Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat/libSocialWeChat.a; sourceTree = "<group>"; };
+		0D7FCBA91E277E3500D4429E /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat/libWeChatSDK.a; sourceTree = "<group>"; };
 		0D871FFC1DFA5C6100728F35 /* SegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
 		0D871FFD1DFA5C6100728F35 /* SegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
 		0D871FFE1DFA5C6100728F35 /* SegmentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentViewController.xib; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7FCBAA1E277E3500D4429E /* libSocialWeChat.a in Frameworks */,
+				0D7FCBAB1E277E3500D4429E /* libWeChatSDK.a in Frameworks */,
 				0D7FCB931E237D1D00D4429E /* libcrypto.a in Frameworks */,
 				0D7FCB941E237D1D00D4429E /* libssl.a in Frameworks */,
 				0D7FCB901E237CD500D4429E /* libstdc++.6.0.9.tbd in Frameworks */,
@@ -429,6 +435,8 @@
 		6EA52BA5F934CC420E1E8582 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D7FCBA81E277E3500D4429E /* libSocialWeChat.a */,
+				0D7FCBA91E277E3500D4429E /* libWeChatSDK.a */,
 				0D7FCB911E237D1D00D4429E /* libcrypto.a */,
 				0D7FCB921E237D1D00D4429E /* libssl.a */,
 				0D7FCB8F1E237CD500D4429E /* libstdc++.6.0.9.tbd */,
@@ -809,6 +817,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -830,6 +839,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";

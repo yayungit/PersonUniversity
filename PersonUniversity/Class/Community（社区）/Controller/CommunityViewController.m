@@ -12,6 +12,8 @@
 #import <BaiduMapAPI_Map/BMKMapView.h>
 #import <BaiduMapAPI_Map/BMKPointAnnotation.h>
 #import <BaiduMapAPI_Search/BMKGeocodeSearchOption.h>
+#import <UMSocialCore/UMSocialCore.h>
+
 @interface CommunityViewController ()<BMKGeoCodeSearchDelegate,BMKLocationServiceDelegate,BMKMapViewDelegate>
 
 @property (nonatomic, strong) BMKLocationService *bmService; //定位
@@ -63,7 +65,25 @@
     [getcode setTitle:@"获取经纬度" forState:(UIControlStateNormal)];
     [getcode addTarget:self action:@selector(getcode:) forControlEvents:(UIControlEventTouchUpInside)];
     [self.view addSubview:getcode];
+    UIButton *share = [UIButton buttonWithType:UIButtonTypeSystem];
+    share.frame  = CGRectMake(200, 300, 100, 40);
+    [share setTitle:@"分享" forState:(UIControlStateNormal)];
+    [share addTarget:self action:@selector(shareClick) forControlEvents:(UIControlEventTouchUpInside)];
+    [self.view addSubview:share];
 }
+- (void)shareClick {
+    UMSocialMessageObject *messObj = [UMSocialMessageObject messageObject];
+    messObj.title = @"test";
+    messObj.text = @"des";
+[[UMSocialManager defaultManager] shareToPlatform:UMSocialPlatformType_WechatSession messageObject:messObj currentViewController:self completion:^(id result, NSError *error) {
+    if (error) {
+        NSLog(@"************Share fail with error %@*********",error);
+    }else{
+        NSLog(@"response data is %@",result);
+    }
+}];
+}
+
 // 反地理编码，根据经纬度获取地理信息
 - (void)reverseGeoCode:(UIButton *)btn {
     double lat = _bmService.userLocation.location.coordinate.latitude;
