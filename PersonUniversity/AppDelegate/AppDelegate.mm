@@ -44,7 +44,7 @@ static NSString *const WX_AppSecret = @"9b65d6206d8aaf6070f359bce9177cfc";
     
     [[UMSocialManager defaultManager] setUmSocialAppkey:UMAppKey];
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:WX_AppKey appSecret:WX_AppSecret redirectURL:nil];
-    [WXApi registerApp:WX_AppKey];
+//    [WXApi registerApp:WX_AppKey];
     return YES;
 }
 // 展示左视图

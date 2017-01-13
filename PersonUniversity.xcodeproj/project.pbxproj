@@ -33,6 +33,7 @@
 		0D8720021DFA5C6100728F35 /* SegmentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D871FFE1DFA5C6100728F35 /* SegmentViewController.xib */; };
 		0D8720051DFA5C9100728F35 /* SegmentCustonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8720041DFA5C9100728F35 /* SegmentCustonView.m */; };
 		0D93DE871DFEDBA0004FF0BF /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93DE861DFEDBA0004FF0BF /* UIView+frame.m */; };
+		0D9EA3A31E28BDE3009EE359 /* FMDBManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9EA3A21E28BDE3009EE359 /* FMDBManger.m */; };
 		0DC983AD1E1CDC4D00F9D665 /* TimerCountDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC983AB1E1CDC4D00F9D665 /* TimerCountDownCell.m */; };
 		0DC983AE1E1CDC4D00F9D665 /* TimerCountDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC983AC1E1CDC4D00F9D665 /* TimerCountDownCell.xib */; };
 		0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */; };
@@ -102,6 +103,8 @@
 		0D93DE821DFEDAF2004FF0BF /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0D93DE851DFEDBA0004FF0BF /* UIView+frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frame.h"; sourceTree = "<group>"; };
 		0D93DE861DFEDBA0004FF0BF /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
+		0D9EA3A11E28BDE3009EE359 /* FMDBManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManger.h; sourceTree = "<group>"; };
+		0D9EA3A21E28BDE3009EE359 /* FMDBManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManger.m; sourceTree = "<group>"; };
 		0DC983AA1E1CDC4D00F9D665 /* TimerCountDownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerCountDownCell.h; sourceTree = "<group>"; };
 		0DC983AB1E1CDC4D00F9D665 /* TimerCountDownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerCountDownCell.m; sourceTree = "<group>"; };
 		0DC983AC1E1CDC4D00F9D665 /* TimerCountDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerCountDownCell.xib; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 			children = (
 				0D5DE21F1E16546600D4219C /* TimerManger.h */,
 				0D5DE2201E16546600D4219C /* TimerManger.m */,
+				0D9EA3A11E28BDE3009EE359 /* FMDBManger.h */,
+				0D9EA3A21E28BDE3009EE359 /* FMDBManger.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -668,6 +673,7 @@
 				0DCDFF181DD1CAAF009F31F9 /* main.m in Sources */,
 				0DCDFF201DD1CC05009F31F9 /* MainViewController.m in Sources */,
 				0DCDFF0E1DD1CA95009F31F9 /* AppDelegate.mm in Sources */,
+				0D9EA3A31E28BDE3009EE359 /* FMDBManger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

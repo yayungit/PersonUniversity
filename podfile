@@ -7,6 +7,6 @@ target 'PersonUniversity' do
  #默认的源地址
 #source 'https://github.com/CocoaPods/Specs.git'
 pod 'BaiduMapKit', '~> 3.2.1'
-#pod ‘UMengSocial’
 pod ‘UMengUShare/Social/WeChat'
+pod ‘FMDB’
 end
