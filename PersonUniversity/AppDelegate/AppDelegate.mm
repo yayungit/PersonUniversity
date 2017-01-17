@@ -13,6 +13,8 @@
 #import "MainViewController.h"
 #import <UMSocialCore/UMSocialCore.h>
 #import <WXApi.h>
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 @interface AppDelegate ()
 @property (nonatomic, strong) LockerViewController *lockerViewController;
 @end
@@ -45,6 +47,7 @@ static NSString *const WX_AppSecret = @"9b65d6206d8aaf6070f359bce9177cfc";
     [[UMSocialManager defaultManager] setUmSocialAppkey:UMAppKey];
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:WX_AppKey appSecret:WX_AppSecret redirectURL:nil];
 //    [WXApi registerApp:WX_AppKey];
+    [Fabric with:@[[Crashlytics class]]];
     return YES;
 }
 // 展示左视图
