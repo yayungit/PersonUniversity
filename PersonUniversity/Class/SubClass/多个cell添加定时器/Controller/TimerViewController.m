@@ -26,7 +26,7 @@ static NSString *const kTimerCountDownCell = @"TimerCountDownCell";
     [self.view addSubview:tableView];
     [[TimerManger shareInstand] start];
     // 随便设置了一些时间
-    self.timeArray = @[@(332737),@(453534),@(4354),@(6000),@(3434),@(400),@(3000),@(40000),@(34534636)];
+    self.timeArray = @[@(332737),@(453534),@(4354),@(6000),@(3434),@(10),@(3000),@(40000),@(34534636)];
     
     
 }

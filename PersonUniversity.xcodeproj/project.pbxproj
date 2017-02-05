@@ -13,6 +13,7 @@
 		0D0D6DC51DE83ED000FA3D1A /* CommunityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D0D6DC31DE83ED000FA3D1A /* CommunityViewController.xib */; };
 		0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE21D1E16401B00D4219C /* TimerViewController.m */; };
 		0D5DE2211E16546600D4219C /* TimerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE2201E16546600D4219C /* TimerManger.m */; };
+		0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D759C281E45D60E00FCE6D3 /* Tools.m */; };
 		0D7AC11C1E2DC90600EF72BE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7AC11A1E2DC90600EF72BE /* Fabric.framework */; };
 		0D7AC11D1E2DC90600EF72BE /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7AC11B1E2DC90600EF72BE /* Crashlytics.framework */; };
 		0D7FCB7A1E237B3F00D4429E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7FCB791E237B3F00D4429E /* SystemConfiguration.framework */; };
@@ -81,6 +82,8 @@
 		0D5DE21D1E16401B00D4219C /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0D5DE21F1E16546600D4219C /* TimerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManger.h; sourceTree = "<group>"; };
 		0D5DE2201E16546600D4219C /* TimerManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerManger.m; sourceTree = "<group>"; };
+		0D759C271E45D60E00FCE6D3 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		0D759C281E45D60E00FCE6D3 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		0D7AC11A1E2DC90600EF72BE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		0D7AC11B1E2DC90600EF72BE /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		0D7FCB791E237B3F00D4429E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -313,6 +316,8 @@
 				0D5DE2201E16546600D4219C /* TimerManger.m */,
 				0D9EA3A11E28BDE3009EE359 /* FMDBManger.h */,
 				0D9EA3A21E28BDE3009EE359 /* FMDBManger.m */,
+				0D759C271E45D60E00FCE6D3 /* Tools.h */,
+				0D759C281E45D60E00FCE6D3 /* Tools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -684,6 +689,7 @@
 				0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */,
 				0D8720011DFA5C6100728F35 /* SegmentViewController.m in Sources */,
 				0D5DE2211E16546600D4219C /* TimerManger.m in Sources */,
+				0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */,
 				0D0D6DC41DE83ED000FA3D1A /* CommunityViewController.m in Sources */,
 				0D8720051DFA5C9100728F35 /* SegmentCustonView.m in Sources */,
 				0DCDFF241DD1CC49009F31F9 /* LockerViewController.m in Sources */,

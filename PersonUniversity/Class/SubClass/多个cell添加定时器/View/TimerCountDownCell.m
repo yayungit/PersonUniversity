@@ -18,6 +18,7 @@
 - (void)timerAction {
     NSInteger countDown = self.time - [TimerManger shareInstand].timeInterval;
     if (countDown<0) {
+        self.countDownLabel.text = @"00:00:00";
         return;
     }
     self.countDownLabel.text = [NSString stringWithFormat:@"%02zd:%02zd:%02zd", countDown/3600, (countDown/60)%60, countDown%60];
