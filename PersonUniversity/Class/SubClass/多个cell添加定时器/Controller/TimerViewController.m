@@ -9,6 +9,7 @@
 #import "TimerViewController.h"
 #import "TimerCountDownCell.h"
 #import "TimerManger.h"
+#import "PersonUniversity-Swift.h"
 @interface TimerViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) NSArray *timeArray;
 
@@ -45,7 +46,12 @@ static NSString *const kTimerCountDownCell = @"TimerCountDownCell";
     cell.time = [self.timeArray[indexPath.row] integerValue];
     return cell;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    TestSwift *testSwift  =[[TestSwift alloc] init];
+    [testSwift log];
+    ViewController *view = [[ViewController alloc] init];
+    [self presentViewController:view animated:YES completion:nil];
+}
 
 
 

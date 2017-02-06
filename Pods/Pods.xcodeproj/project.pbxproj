@@ -638,7 +638,7 @@
 			};
 			name = Debug;
 		};
-		14DC5BAF9F2D73AE90C675175085A05D /* Release */ = {
+		01A817C37C74CB76A6A0F9C8014F081E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA666AE7D7C9A4576589FC56D933FA78 /* FMDB.xcconfig */;
 			buildSettings = {
@@ -658,6 +658,7 @@
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -747,7 +748,7 @@
 			};
 			name = Release;
 		};
-		5E2F95937BD27829D299193A3165F929 /* Debug */ = {
+		FB2D46D818D33247E52496B572644579 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA666AE7D7C9A4576589FC56D933FA78 /* FMDB.xcconfig */;
 			buildSettings = {
@@ -767,6 +768,7 @@
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -776,8 +778,8 @@
 		1BA066B3D32C553BF37E3322F9113F02 /* Build configuration list for PBXNativeTarget "FMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5E2F95937BD27829D299193A3165F929 /* Debug */,
-				14DC5BAF9F2D73AE90C675175085A05D /* Release */,
+				FB2D46D818D33247E52496B572644579 /* Debug */,
+				01A817C37C74CB76A6A0F9C8014F081E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
