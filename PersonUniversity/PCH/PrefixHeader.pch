@@ -10,8 +10,10 @@
 #define PrefixHeader_pch
 
 #import "Tools.h"
-
-
+#import "UIColor+Hex.h"
+#import "UIView+frame.h"
+#import "UIFont+XM.h"
+#import "UIView+auto.h"
 #define kSCREENWIDTH   [UIScreen mainScreen].bounds.size.width
 #define kSCREENHEIGHT  [UIScreen mainScreen].bounds.size.height
 #if DEBUG

@@ -9,4 +9,6 @@ target 'PersonUniversity' do
 pod 'BaiduMapKit', '~> 3.2.1'
 pod ‘UMengUShare/Social/WeChat'
 pod ‘FMDB’
+pod 'PureLayout'
+pod 'Masonry'
 end

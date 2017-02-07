@@ -7,24 +7,30 @@
 //
 
 import UIKit
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.purple;
+
         let button:UIButton = UIButton(type:.custom);
-        button.frame = CGRect(x:100,y:200,width:200,height:40)
+//        button.frame = CGRect(x:100,y:200,width:200,height:40)
+        button.frame = CGRect.init(x: 30, y: 200, width: 200, height: 40)
         button.backgroundColor = UIColor.gray
         self.view.addSubview(button)
+        button.setTitle("Alter AutoLayoutViewController", for: .normal)
         button.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
     }
 
     
-    
     func buttonClick(){
-        self.dismiss(animated: true) { 
-            print("diss VC succed")
-        };
+//        self.dismiss(animated: true) { 
+//            print("diss VC succed")
+//        };
+        let autoVC = AutoLayoutViewController.init();
+        
+        self.present(autoVC, animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

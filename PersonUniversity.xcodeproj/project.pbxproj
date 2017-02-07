@@ -14,6 +14,12 @@
 		0D14E6F91E481DCB00C002A6 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D14E6F81E481DCB00C002A6 /* UIColor+Hex.m */; };
 		0D14E7161E48252500C002A6 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D14E7151E48252500C002A6 /* TestSwift.swift */; };
 		0D14E7181E4828C500C002A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D14E7171E4828C500C002A6 /* ViewController.swift */; };
+		0D3E90B71E496C1700409701 /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90B51E496C1700409701 /* AutoLayoutViewController.m */; };
+		0D3E90B81E496C1700409701 /* AutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3E90B61E496C1700409701 /* AutoLayoutViewController.xib */; };
+		0D3E90BC1E497C7C00409701 /* AutoTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90BA1E497C7C00409701 /* AutoTestTableViewCell.m */; };
+		0D3E90BD1E497C7C00409701 /* AutoTestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3E90BB1E497C7C00409701 /* AutoTestTableViewCell.xib */; };
+		0D3E90C01E4999BE00409701 /* UIFont+XM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90BF1E4999BE00409701 /* UIFont+XM.m */; };
+		0D3E90C31E499A3200409701 /* UIView+auto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90C21E499A3200409701 /* UIView+auto.m */; };
 		0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE21D1E16401B00D4219C /* TimerViewController.m */; };
 		0D5DE2211E16546600D4219C /* TimerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE2201E16546600D4219C /* TimerManger.m */; };
 		0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D759C281E45D60E00FCE6D3 /* Tools.m */; };
@@ -86,6 +92,16 @@
 		0D14E7141E48252500C002A6 /* PersonUniversity-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonUniversity-Bridging-Header.h"; sourceTree = "<group>"; };
 		0D14E7151E48252500C002A6 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		0D14E7171E4828C500C002A6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D3E90B41E496C1700409701 /* AutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
+		0D3E90B51E496C1700409701 /* AutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
+		0D3E90B61E496C1700409701 /* AutoLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutViewController.xib; sourceTree = "<group>"; };
+		0D3E90B91E497C7C00409701 /* AutoTestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoTestTableViewCell.h; sourceTree = "<group>"; };
+		0D3E90BA1E497C7C00409701 /* AutoTestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoTestTableViewCell.m; sourceTree = "<group>"; };
+		0D3E90BB1E497C7C00409701 /* AutoTestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoTestTableViewCell.xib; sourceTree = "<group>"; };
+		0D3E90BE1E4999BE00409701 /* UIFont+XM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+XM.h"; sourceTree = "<group>"; };
+		0D3E90BF1E4999BE00409701 /* UIFont+XM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+XM.m"; sourceTree = "<group>"; };
+		0D3E90C11E499A3200409701 /* UIView+auto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+auto.h"; sourceTree = "<group>"; };
+		0D3E90C21E499A3200409701 /* UIView+auto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+auto.m"; sourceTree = "<group>"; };
 		0D5DE21C1E16401B00D4219C /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		0D5DE21D1E16401B00D4219C /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0D5DE21F1E16546600D4219C /* TimerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManger.h; sourceTree = "<group>"; };
@@ -248,6 +264,43 @@
 			path = SwiftClass;
 			sourceTree = "<group>";
 		};
+		0D3E90B01E496BFC00409701 /* 自适应布局 */ = {
+			isa = PBXGroup;
+			children = (
+				0D3E90B11E496BFC00409701 /* Controller */,
+				0D3E90B21E496BFC00409701 /* Model */,
+				0D3E90B31E496BFC00409701 /* View */,
+			);
+			path = "自适应布局";
+			sourceTree = "<group>";
+		};
+		0D3E90B11E496BFC00409701 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D3E90B41E496C1700409701 /* AutoLayoutViewController.h */,
+				0D3E90B51E496C1700409701 /* AutoLayoutViewController.m */,
+				0D3E90B61E496C1700409701 /* AutoLayoutViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0D3E90B21E496BFC00409701 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D3E90B31E496BFC00409701 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0D3E90B91E497C7C00409701 /* AutoTestTableViewCell.h */,
+				0D3E90BA1E497C7C00409701 /* AutoTestTableViewCell.m */,
+				0D3E90BB1E497C7C00409701 /* AutoTestTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0D5DE21A1E163FFC00D4219C /* 多个cell添加定时器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +322,7 @@
 		0D871FF41DFA5B5B00728F35 /* SubClass */ = {
 			isa = PBXGroup;
 			children = (
+				0D3E90B01E496BFC00409701 /* 自适应布局 */,
 				0D5DE21A1E163FFC00D4219C /* 多个cell添加定时器 */,
 				0D871FF51DFA5B8300728F35 /* 顶部分类滑动 */,
 			);
@@ -315,6 +369,10 @@
 			isa = PBXGroup;
 			children = (
 				0D93DE841DFEDB14004FF0BF /* UIView */,
+				0D3E90BE1E4999BE00409701 /* UIFont+XM.h */,
+				0D3E90BF1E4999BE00409701 /* UIFont+XM.m */,
+				0D3E90C11E499A3200409701 /* UIView+auto.h */,
+				0D3E90C21E499A3200409701 /* UIView+auto.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -616,9 +674,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D3E90BD1E497C7C00409701 /* AutoTestTableViewCell.xib in Resources */,
 				0D8720021DFA5C6100728F35 /* SegmentViewController.xib in Resources */,
 				0DC983AE1E1CDC4D00F9D665 /* TimerCountDownCell.xib in Resources */,
 				0D0D6DC51DE83ED000FA3D1A /* CommunityViewController.xib in Resources */,
+				0D3E90B81E496C1700409701 /* AutoLayoutViewController.xib in Resources */,
 				0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */,
 				0DCDFF291DD1CCA3009F31F9 /* LeftViewController.xib in Resources */,
 				0DCDFF211DD1CC05009F31F9 /* MainViewController.xib in Resources */,
@@ -709,8 +769,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */,
+				0D3E90C31E499A3200409701 /* UIView+auto.m in Sources */,
 				0D14E7181E4828C500C002A6 /* ViewController.swift in Sources */,
 				0D14E6F91E481DCB00C002A6 /* UIColor+Hex.m in Sources */,
+				0D3E90C01E4999BE00409701 /* UIFont+XM.m in Sources */,
+				0D3E90BC1E497C7C00409701 /* AutoTestTableViewCell.m in Sources */,
 				0D8720011DFA5C6100728F35 /* SegmentViewController.m in Sources */,
 				0D5DE2211E16546600D4219C /* TimerManger.m in Sources */,
 				0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */,
@@ -723,6 +786,7 @@
 				0DC983AD1E1CDC4D00F9D665 /* TimerCountDownCell.m in Sources */,
 				0D93DE871DFEDBA0004FF0BF /* UIView+frame.m in Sources */,
 				0DCDFF181DD1CAAF009F31F9 /* main.m in Sources */,
+				0D3E90B71E496C1700409701 /* AutoLayoutViewController.m in Sources */,
 				0DCDFF201DD1CC05009F31F9 /* MainViewController.m in Sources */,
 				0D14E7161E48252500C002A6 /* TestSwift.swift in Sources */,
 				0DCDFF0E1DD1CA95009F31F9 /* AppDelegate.mm in Sources */,
