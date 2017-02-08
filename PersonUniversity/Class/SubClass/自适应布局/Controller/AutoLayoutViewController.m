@@ -10,6 +10,8 @@
 #import "AutoTestTableViewCell.h"
 @interface AutoLayoutViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *autoTableView;
+@property (weak, nonatomic) IBOutlet UILabel *scaleLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *scaleLabelHeight;
 
 @end
 
@@ -24,8 +26,11 @@ static NSString *const kAutoTestTableViewCell = @"AutoTestTableViewCell";
     imageView.center = self.view.center;
     [self.view addSubview:imageView];
     [_autoTableView registerNib:[UINib nibWithNibName:kAutoTestTableViewCell bundle:nil] forCellReuseIdentifier: kAutoTestTableViewCell];
-//    _autoTableView.estimatedRowHeight = UITableViewAutomaticDimension;
-//    _autoTableView.rowHeight = 10;
+    
+    
+    _scaleLabel.font = [UIFont cwFontWithSize:20];
+    _scaleLabelHeight.constant = _scaleLabelHeight.constant * [UIView scaleFromeIphone6];
+    
 }
 - (void)traitCollectionDidChange:(UITraitCollection *)previousTraitCollection {
     

@@ -10,6 +10,7 @@
 #import "LockerViewController.h"
 #import "SegmentViewController.h"
 #import "TimerViewController.h"
+#import "GCDTestViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -22,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
-    classArray = @[@"addSubView动画",@"顶部分类类别",@"多个cell添加定时器"];
+    classArray = @[@"多线程测试",@"顶部分类类别",@"多个cell添加定时器"];
     [self configUI];
 }
 // MARK: CONFIG-UI
@@ -49,7 +50,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 0: {
-            
+            GCDTestViewController *GCDTest = [[GCDTestViewController alloc] init];
+            [self.navigationController pushViewController:GCDTest animated:YES];
         }
             break;
         case 1: {

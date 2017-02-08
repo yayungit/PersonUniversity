@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AutoTestTableViewCell : UITableViewCell
-@property (nonatomic, assign) CGFloat rowHeight;
+@property (nonatomic, assign, readonly) CGFloat rowHeight;
 @end

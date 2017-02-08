@@ -12,17 +12,29 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.purple;
-
+        
+        self.view.backgroundColor = UIColor.init(hex: 0xff4521)
+        
         let button:UIButton = UIButton(type:.custom);
-//        button.frame = CGRect(x:100,y:200,width:200,height:40)
         button.frame = CGRect.init(x: 30, y: 200, width: 200, height: 40)
         button.backgroundColor = UIColor.gray
+        
         self.view.addSubview(button)
         button.setTitle("Alter AutoLayoutViewController", for: .normal)
         button.addTarget(self, action: #selector(buttonClick), for: .touchUpInside)
+        
+        let dismissButton:UIButton! = UIButton.init(type: .custom)
+        dismissButton.frame = CGRect.init(x: 30, y: 260, width: 200, height: 40)
+        dismissButton.backgroundColor = UIColor.gray
+        self.view.addSubview(dismissButton)
+        dismissButton.setTitle("Dismiss current VC", for: .normal)
+        dismissButton.addTarget(self, action: #selector(disMissVC), for: .touchUpInside)
+        
     }
 
+    func disMissVC() {
+        self.dismiss(animated: true, completion: nil)
+    }
     
     func buttonClick(){
 //        self.dismiss(animated: true) { 

@@ -20,6 +20,8 @@
 		0D3E90BD1E497C7C00409701 /* AutoTestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3E90BB1E497C7C00409701 /* AutoTestTableViewCell.xib */; };
 		0D3E90C01E4999BE00409701 /* UIFont+XM.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90BF1E4999BE00409701 /* UIFont+XM.m */; };
 		0D3E90C31E499A3200409701 /* UIView+auto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90C21E499A3200409701 /* UIView+auto.m */; };
+		0D3E90C91E4AED9900409701 /* GCDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90C71E4AED9900409701 /* GCDTestViewController.m */; };
+		0D3E90CA1E4AED9900409701 /* GCDTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3E90C81E4AED9900409701 /* GCDTestViewController.xib */; };
 		0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE21D1E16401B00D4219C /* TimerViewController.m */; };
 		0D5DE2211E16546600D4219C /* TimerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE2201E16546600D4219C /* TimerManger.m */; };
 		0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D759C281E45D60E00FCE6D3 /* Tools.m */; };
@@ -102,6 +104,9 @@
 		0D3E90BF1E4999BE00409701 /* UIFont+XM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+XM.m"; sourceTree = "<group>"; };
 		0D3E90C11E499A3200409701 /* UIView+auto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+auto.h"; sourceTree = "<group>"; };
 		0D3E90C21E499A3200409701 /* UIView+auto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+auto.m"; sourceTree = "<group>"; };
+		0D3E90C61E4AED9900409701 /* GCDTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTestViewController.h; sourceTree = "<group>"; };
+		0D3E90C71E4AED9900409701 /* GCDTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTestViewController.m; sourceTree = "<group>"; };
+		0D3E90C81E4AED9900409701 /* GCDTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GCDTestViewController.xib; sourceTree = "<group>"; };
 		0D5DE21C1E16401B00D4219C /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		0D5DE21D1E16401B00D4219C /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0D5DE21F1E16546600D4219C /* TimerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManger.h; sourceTree = "<group>"; };
@@ -301,6 +306,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		0D3E90C41E4AED6F00409701 /* 多线程 */ = {
+			isa = PBXGroup;
+			children = (
+				0D3E90C51E4AED6F00409701 /* Controller */,
+			);
+			path = "多线程";
+			sourceTree = "<group>";
+		};
+		0D3E90C51E4AED6F00409701 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0D3E90C61E4AED9900409701 /* GCDTestViewController.h */,
+				0D3E90C71E4AED9900409701 /* GCDTestViewController.m */,
+				0D3E90C81E4AED9900409701 /* GCDTestViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		0D5DE21A1E163FFC00D4219C /* 多个cell添加定时器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +345,7 @@
 		0D871FF41DFA5B5B00728F35 /* SubClass */ = {
 			isa = PBXGroup;
 			children = (
+				0D3E90C41E4AED6F00409701 /* 多线程 */,
 				0D3E90B01E496BFC00409701 /* 自适应布局 */,
 				0D5DE21A1E163FFC00D4219C /* 多个cell添加定时器 */,
 				0D871FF51DFA5B8300728F35 /* 顶部分类滑动 */,
@@ -675,6 +699,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D3E90BD1E497C7C00409701 /* AutoTestTableViewCell.xib in Resources */,
+				0D3E90CA1E4AED9900409701 /* GCDTestViewController.xib in Resources */,
 				0D8720021DFA5C6100728F35 /* SegmentViewController.xib in Resources */,
 				0DC983AE1E1CDC4D00F9D665 /* TimerCountDownCell.xib in Resources */,
 				0D0D6DC51DE83ED000FA3D1A /* CommunityViewController.xib in Resources */,
@@ -775,6 +800,7 @@
 				0D3E90C01E4999BE00409701 /* UIFont+XM.m in Sources */,
 				0D3E90BC1E497C7C00409701 /* AutoTestTableViewCell.m in Sources */,
 				0D8720011DFA5C6100728F35 /* SegmentViewController.m in Sources */,
+				0D3E90C91E4AED9900409701 /* GCDTestViewController.m in Sources */,
 				0D5DE2211E16546600D4219C /* TimerManger.m in Sources */,
 				0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */,
 				0D0D6DC41DE83ED000FA3D1A /* CommunityViewController.m in Sources */,

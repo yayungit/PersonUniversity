@@ -8,7 +8,12 @@
 
 #import "AutoTestTableViewCell.h"
 #import <PureLayout/PureLayout.h>
-#import <Masonry.h>
+
+@interface AutoTestTableViewCell ()
+@property (nonatomic, assign) CGFloat labelHeight;
+@property (nonatomic, assign) CGFloat lineSpecing;
+@end
+
 @implementation AutoTestTableViewCell
 
 - (void)awakeFromNib {
@@ -40,16 +45,18 @@
     // 比例缩放后的字体大小
     bLabel.font = [UIFont cwFontWithSize:30];
     
-//    // 获取blabel的y值
-//    CGFloat y = yLayout.constant;
-    CGFloat bLabelHeight = heighrLayout.constant;
+//    CGFloat bLabelHeight = heighrLayout.constant;
+    _labelHeight = heighrLayout.constant;
     // 比例缩放后的间隔的高度
-    CGFloat lineSpecing = [UIView sizeFromIphone6:10];
-    self.rowHeight = bLabelHeight*2 + lineSpecing*3;
-    
+//    CGFloat lineSpecing = [UIView sizeFromIphone6:10];
+    _lineSpecing = [UIView sizeFromIphone6:10];
+//    self.rowHeight = bLabelHeight*2 + lineSpecing*3;
+    YYLog(@"bLabelHeight=%.f, lineSpecing = %.f ",_labelHeight, _lineSpecing);
     
 }
-
+- (CGFloat)rowHeight {
+    return _labelHeight*2 + _lineSpecing * 3;
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

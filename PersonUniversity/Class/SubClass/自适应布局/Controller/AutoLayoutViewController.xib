@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutoLayoutViewController">
             <connections>
                 <outlet property="autoTableView" destination="TBL-Ax-6Dt" id="zQ6-xT-kKg"/>
+                <outlet property="scaleLabel" destination="DEV-Jp-j53" id="ccr-qx-Zpz"/>
+                <outlet property="scaleLabelHeight" destination="H4u-UA-zlT" id="1LJ-9f-2II"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,7 +23,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是测试字体啦啦" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8Ee-Bc-VTN">
-                    <rect key="frame" x="0.0" y="100" width="375" height="107.5"/>
+                    <rect key="frame" x="0.0" y="100" width="375" height="108"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -30,25 +32,51 @@
                     </variation>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TBL-Ax-6Dt">
-                    <rect key="frame" x="0.0" y="207.5" width="375" height="459.5"/>
+                    <rect key="frame" x="0.0" y="208" width="375" height="459"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="HbK-Bu-RnX"/>
                         <outlet property="delegate" destination="-1" id="5UP-yn-WK6"/>
                     </connections>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20号字体" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-ov-oaN">
+                    <rect key="frame" x="10" y="10" width="355" height="40"/>
+                    <color key="backgroundColor" red="0.99197115384615386" green="0.92856971153846157" blue="0.86622596153846154" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Z36-64-JQ2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20号字体比例版" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEV-Jp-j53">
+                    <rect key="frame" x="10" y="60" width="355" height="40"/>
+                    <color key="backgroundColor" red="0.99197115384615386" green="0.92856971153846157" blue="0.95596153846153842" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="H4u-UA-zlT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="8Ee-Bc-VTN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2n0-lU-QLY"/>
+                <constraint firstItem="DEV-Jp-j53" firstAttribute="top" secondItem="p0s-ov-oaN" secondAttribute="bottom" constant="10" id="75Y-fB-DqA"/>
                 <constraint firstItem="TBL-Ax-6Dt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8do-mS-U09"/>
+                <constraint firstItem="DEV-Jp-j53" firstAttribute="leading" secondItem="p0s-ov-oaN" secondAttribute="leading" id="Eum-Nj-6e5"/>
                 <constraint firstAttribute="bottom" secondItem="TBL-Ax-6Dt" secondAttribute="bottom" id="FOt-38-wb1"/>
+                <constraint firstItem="p0s-ov-oaN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="GbH-sY-S2W"/>
                 <constraint firstAttribute="trailing" secondItem="TBL-Ax-6Dt" secondAttribute="trailing" id="L77-ZL-lkr"/>
                 <constraint firstItem="TBL-Ax-6Dt" firstAttribute="top" secondItem="8Ee-Bc-VTN" secondAttribute="bottom" id="Lev-t8-83w"/>
+                <constraint firstItem="DEV-Jp-j53" firstAttribute="trailing" secondItem="p0s-ov-oaN" secondAttribute="trailing" id="NqD-f6-Udp"/>
                 <constraint firstItem="8Ee-Bc-VTN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Ss3-vd-w5b"/>
                 <constraint firstItem="8Ee-Bc-VTN" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="XjL-Gj-GDx"/>
+                <constraint firstItem="p0s-ov-oaN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="rPe-1j-MHH"/>
+                <constraint firstAttribute="trailing" secondItem="p0s-ov-oaN" secondAttribute="trailing" constant="10" id="zYP-a1-mPR"/>
             </constraints>
-            <point key="canvasLocation" x="33.5" y="83.5"/>
+            <point key="canvasLocation" x="33" y="83"/>
         </view>
     </objects>
 </document>
