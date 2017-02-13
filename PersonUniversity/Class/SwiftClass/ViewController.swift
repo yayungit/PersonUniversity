@@ -14,7 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.init(hex: 0xff4521)
-        
         let button:UIButton = UIButton(type:.custom);
         button.frame = CGRect.init(x: 30, y: 200, width: 200, height: 40)
         button.backgroundColor = UIColor.gray

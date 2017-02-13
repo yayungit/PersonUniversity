@@ -8,7 +8,7 @@
 
 #import "SegmentViewController.h"
 #import "SegmentCustonView.h"
-@interface SegmentViewController ()
+@interface SegmentViewController ()<ClassButtonClickProtocol>
 
 @end
 
@@ -19,6 +19,15 @@
     // Do any additional setup after loading the view from its nib.
     SegmentCustonView *segmentCustonView = [[SegmentCustonView alloc]initWithFrame:CGRectMake(0, 64, kSCREENWIDTH, 40) andClassArray:@[@"游泳",@"旅游",@"爬山",@"游乐场",@"撒哈拉沙漠",@"内蒙古大草原",@"雪山之巅",@"吃",@"喝",@"玩",@"乐"]];
     [self.view addSubview:segmentCustonView];
+    
+    segmentCustonView.classButtonDelegate = self;
+    
+}
+- (void)didClassButtonClick:(UIButton *)button andButtonIndex:(NSInteger)index {
+    // 断言测试；
+//    int a = 4;
+//    NSAssert(a == 5,@"a must be is eque to 4");
+//    NSParameterAssert(a==5);
 }
 
 - (void)didReceiveMemoryWarning {

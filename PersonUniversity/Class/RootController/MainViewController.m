@@ -11,6 +11,7 @@
 #import "SegmentViewController.h"
 #import "TimerViewController.h"
 #import "GCDTestViewController.h"
+#import "MRCTestViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -23,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
-    classArray = @[@"多线程测试",@"顶部分类类别",@"多个cell添加定时器"];
+    classArray = @[@"多线程测试",@"顶部分类类别",@"多个cell添加定时器",@"MRCTest"];
     [self configUI];
 }
 // MARK: CONFIG-UI
@@ -62,6 +63,11 @@
         case 2: {
             TimerViewController *timerViewController = [[TimerViewController alloc] init];
             [self.navigationController pushViewController:timerViewController animated:YES];
+        }
+            break;
+        case 3: {
+            MRCTestViewController *mrcTestVC = [[MRCTestViewController alloc] init];
+            [self.navigationController pushViewController:mrcTestVC animated:YES];
         }
             break;
         default:
