@@ -24,6 +24,7 @@
 		0D3E90CA1E4AED9900409701 /* GCDTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3E90C81E4AED9900409701 /* GCDTestViewController.xib */; };
 		0D3E90CE1E4C134E00409701 /* MRCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90CD1E4C134E00409701 /* MRCTestViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0D3E910C1E4DAFAB00409701 /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E910B1E4DAFAB00409701 /* Http.m */; };
+		0D3E91101E52EA2B00409701 /* AnmationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E910F1E52EA2B00409701 /* AnmationTestViewController.m */; };
 		0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE21D1E16401B00D4219C /* TimerViewController.m */; };
 		0D5DE2211E16546600D4219C /* TimerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE2201E16546600D4219C /* TimerManger.m */; };
 		0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D759C281E45D60E00FCE6D3 /* Tools.m */; };
@@ -113,6 +114,8 @@
 		0D3E90CD1E4C134E00409701 /* MRCTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCTestViewController.m; sourceTree = "<group>"; };
 		0D3E910A1E4DAFAB00409701 /* Http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Http.h; sourceTree = "<group>"; };
 		0D3E910B1E4DAFAB00409701 /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Http.m; sourceTree = "<group>"; };
+		0D3E910E1E52EA2B00409701 /* AnmationTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnmationTestViewController.h; sourceTree = "<group>"; };
+		0D3E910F1E52EA2B00409701 /* AnmationTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnmationTestViewController.m; sourceTree = "<group>"; };
 		0D5DE21C1E16401B00D4219C /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		0D5DE21D1E16401B00D4219C /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0D5DE21F1E16546600D4219C /* TimerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManger.h; sourceTree = "<group>"; };
@@ -348,6 +351,15 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
+		0D3E910D1E52EA0D00409701 /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				0D3E910E1E52EA2B00409701 /* AnmationTestViewController.h */,
+				0D3E910F1E52EA2B00409701 /* AnmationTestViewController.m */,
+			);
+			path = "动画";
+			sourceTree = "<group>";
+		};
 		0D5DE21A1E163FFC00D4219C /* 多个cell添加定时器 */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +381,7 @@
 		0D871FF41DFA5B5B00728F35 /* SubClass */ = {
 			isa = PBXGroup;
 			children = (
+				0D3E910D1E52EA0D00409701 /* 动画 */,
 				0D3E90CB1E4C133C00409701 /* MRC测试 */,
 				0D3E90C41E4AED6F00409701 /* 多线程 */,
 				0D3E90B01E496BFC00409701 /* 自适应布局 */,
@@ -840,6 +853,7 @@
 				0D93DE871DFEDBA0004FF0BF /* UIView+frame.m in Sources */,
 				0DCDFF181DD1CAAF009F31F9 /* main.m in Sources */,
 				0D3E90B71E496C1700409701 /* AutoLayoutViewController.m in Sources */,
+				0D3E91101E52EA2B00409701 /* AnmationTestViewController.m in Sources */,
 				0DCDFF201DD1CC05009F31F9 /* MainViewController.m in Sources */,
 				0D14E7161E48252500C002A6 /* TestSwift.swift in Sources */,
 				0DCDFF0E1DD1CA95009F31F9 /* AppDelegate.mm in Sources */,

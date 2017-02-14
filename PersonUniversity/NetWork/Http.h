@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking/AFNetworking.h>
+
+
 @interface Http : NSObject
 +(void)sharedInstance;
 
-
+-(NSURLSessionDataTask *)sessionReuestForURL:(NSString *)url withParams:(NSDictionary *)params completion:(void(^)(id , NSError *)) completion;
 
 @end
