@@ -13,6 +13,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
+        
+        let doString = "Dog"
+        var arr = [String]()
+        arr.append("nihao")
+        var array:[String] = ["sdf","sdf"]
+        array = array + arr
+        var arrayList = ["dsghk"]//自动推断类型
+        arrayList = arrayList + array
+        arrayList.insert("dog", at: 2)
+        arrayList.insert(contentsOf: ["dsfas","sdf"], at: 2)
+        
+        
+        
+        
+        for codeUnit in doString.utf8 {
+            print("\(codeUnit)")
+        }
+        
+        
         self.view.backgroundColor = UIColor.init(hex: 0xff4521)
         let button:UIButton = UIButton(type:.custom);
         button.frame = CGRect.init(x: 30, y: 200, width: 200, height: 40)
