@@ -25,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
-    classArray = @[@"多线程测试",@"顶部分类类别",@"多个cell添加定时器",@"MRCTest",@"动画和iOS10原生语音识别"];
+    classArray = @[@"多线程测试",@"顶部分类类别",@"多个cell添加定时器,自适应布局",@"MRCTest",@"动画和iOS10原生语音识别"];
     [self configUI];
 }
 // MARK: CONFIG-UI

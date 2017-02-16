@@ -8,6 +8,10 @@
 
 #import "AutoLayoutViewController.h"
 #import "AutoTestTableViewCell.h"
+#import "CustomAutoTableViewCell.h"
+#import <UITableView+FDTemplateLayoutCell.h>
+
+
 @interface AutoLayoutViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *autoTableView;
 @property (weak, nonatomic) IBOutlet UILabel *scaleLabel;
@@ -16,6 +20,7 @@
 @end
 
 static NSString *const kAutoTestTableViewCell = @"AutoTestTableViewCell";
+static NSString *const kCustomAutoTableViewCell = @"CustomAutoTableViewCell";
 
 @implementation AutoLayoutViewController
 
@@ -26,7 +31,7 @@ static NSString *const kAutoTestTableViewCell = @"AutoTestTableViewCell";
     imageView.center = self.view.center;
     [self.view addSubview:imageView];
     [_autoTableView registerNib:[UINib nibWithNibName:kAutoTestTableViewCell bundle:nil] forCellReuseIdentifier: kAutoTestTableViewCell];
-    
+    [_autoTableView registerNib:[UINib nibWithNibName:kCustomAutoTableViewCell bundle:nil] forCellReuseIdentifier:kCustomAutoTableViewCell];
     
     _scaleLabel.font = [UIFont cwFontWithSize:20];
     _scaleLabelHeight.constant = _scaleLabelHeight.constant * [UIView scaleFromeIphone6];
@@ -61,24 +66,44 @@ static NSString *const kAutoTestTableViewCell = @"AutoTestTableViewCell";
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    AutoTestTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kAutoTestTableViewCell forIndexPath:indexPath];
-    return cell;
+    
+    
+    if (indexPath.row == 2) {
+        CustomAutoTableViewCell *customcell = [tableView dequeueReusableCellWithIdentifier:kCustomAutoTableViewCell forIndexPath:indexPath];
+        return customcell;
+    } else {
+        AutoTestTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kAutoTestTableViewCell forIndexPath:indexPath];
+        return cell;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    // 100是正常的高度， 减去缩放后的差  , 10是cell最下方的间隔
-//    CGFloat diff = [UIView scaleFromeIphone6];
-//    if (diff>1) {
-//        return 100+10*diff;
-//    } else if (diff < 1) {
-//        return 100-10*diff;
-//    } else {
-//        return 100;
-//    }
-    AutoTestTableViewCell *cell = [[NSBundle mainBundle] loadNibNamed:kAutoTestTableViewCell owner:self options:nil].firstObject;
-    return cell.rowHeight>0 ? cell.rowHeight:0;
+    
+    if (indexPath.row == 2) {
+//        CustomAutoTableViewCell *cellCustom = [[NSBundle mainBundle]loadNibNamed:kCustomAutoTableViewCell owner:self options:nil].lastObject;
+//        CGSize size = [cellCustom.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+//       return  [tableView fd_heightForCellWithIdentifier:kCustomAutoTableViewCell cacheByIndexPath:indexPath configuration:^(id cell) {
+//            // 配置cell的数据源
+//        }];
+        return [tableView fd_heightForCellWithIdentifier:kCustomAutoTableViewCell configuration:^(id cell) {
+            
+        }];
+        
+//        return size.height;
+        
+    } else {
+        // 100是正常的高度， 减去缩放后的差  , 10是cell最下方的间隔
+        AutoTestTableViewCell *cell = [[NSBundle mainBundle] loadNibNamed:kAutoTestTableViewCell owner:self options:nil].firstObject;
+        return cell.rowHeight>0 ? cell.rowHeight:0;
+    }
     
 }
+
+
+
+
+
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

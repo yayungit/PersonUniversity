@@ -25,9 +25,7 @@
 }
 - (void)didClassButtonClick:(UIButton *)button andButtonIndex:(NSInteger)index {
     // 断言测试；
-//    int a = 4;
-//    NSAssert(a == 5,@"a must be is eque to 4");
-//    NSParameterAssert(a==5);
+
 }
 
 - (void)didReceiveMemoryWarning {

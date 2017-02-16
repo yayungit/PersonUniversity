@@ -12,4 +12,5 @@ pod ‘FMDB’
 pod 'PureLayout'
 pod 'Masonry'
 pod 'AFNetworking', '~> 3.1.0'
+pod 'UITableView+FDTemplateLayoutCell'
 end

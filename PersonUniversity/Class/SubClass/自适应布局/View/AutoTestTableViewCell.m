@@ -12,6 +12,7 @@
 @interface AutoTestTableViewCell ()
 @property (nonatomic, assign) CGFloat labelHeight;
 @property (nonatomic, assign) CGFloat lineSpecing;
+
 @end
 
 @implementation AutoTestTableViewCell

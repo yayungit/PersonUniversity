@@ -20,6 +20,7 @@ PODS:
   - FMDB/standard (2.6.2)
   - Masonry (1.0.2)
   - PureLayout (3.0.2)
+  - UITableView+FDTemplateLayoutCell (1.4)
   - UMengUShare/Core (6.2.1):
     - UMengUShare/Network
   - UMengUShare/Network (6.2.1)
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - FMDB
   - Masonry
   - PureLayout
+  - UITableView+FDTemplateLayoutCell
   - UMengUShare/Social/WeChat
 
 SPEC CHECKSUMS:
@@ -40,8 +42,9 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   UMengUShare: 583ac067e747c66429d5063896da0e77c4fe7688
 
-PODFILE CHECKSUM: eae4c7550365924f117685947804500dae5873f3
+PODFILE CHECKSUM: 88893d71297618938b39a9b1afe7656e15edd97b
 
 COCOAPODS: 1.1.1
