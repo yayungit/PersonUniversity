@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AnmationTestViewController : UIViewController
-
+- (NSInteger)getNumber:(NSInteger )number;
 @end

@@ -24,6 +24,9 @@ static NSString *const WX_AppKey = @"wx9ed67d121cd660b1";
 static NSString *const WX_AppSecret = @"9b65d6206d8aaf6070f359bce9177cfc";
 @implementation AppDelegate
 
+// 架构
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

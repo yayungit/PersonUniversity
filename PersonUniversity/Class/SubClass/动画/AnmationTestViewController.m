@@ -267,4 +267,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+- (NSInteger)getNumber:(NSInteger)number {
+    return number;
+}
+
 @end
