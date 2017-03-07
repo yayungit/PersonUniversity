@@ -39,5 +39,8 @@
     self.timeInterval ++;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"timerAction" object:timer userInfo:nil];
 }
-
+- (void)stop {
+    [self.timer invalidate];
+    self.timer = nil;
+}
 @end

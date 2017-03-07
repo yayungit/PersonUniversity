@@ -13,4 +13,5 @@ pod 'PureLayout'
 pod 'Masonry'
 pod 'AFNetworking', '~> 3.1.0'
 pod 'UITableView+FDTemplateLayoutCell'
+pod 'RongCloudIM', '~> 2.8.6' #2.8.0之后统一用RongCloudIM，RongCloudIM/IMLib', RongCloudIM/IMKit' 都以废弃掉。
 end

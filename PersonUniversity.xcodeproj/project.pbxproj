@@ -14,6 +14,7 @@
 		0D14E6F91E481DCB00C002A6 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D14E6F81E481DCB00C002A6 /* UIColor+Hex.m */; };
 		0D14E7161E48252500C002A6 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D14E7151E48252500C002A6 /* TestSwift.swift */; };
 		0D14E7181E4828C500C002A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D14E7171E4828C500C002A6 /* ViewController.swift */; };
+		0D26A8241E5C142500D7DBFD /* IMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D26A8231E5C142500D7DBFD /* IMTestViewController.m */; };
 		0D3E90B71E496C1700409701 /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90B51E496C1700409701 /* AutoLayoutViewController.m */; };
 		0D3E90B81E496C1700409701 /* AutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3E90B61E496C1700409701 /* AutoLayoutViewController.xib */; };
 		0D3E90BC1E497C7C00409701 /* AutoTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90BA1E497C7C00409701 /* AutoTestTableViewCell.m */; };
@@ -99,6 +100,8 @@
 		0D14E7141E48252500C002A6 /* PersonUniversity-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PersonUniversity-Bridging-Header.h"; sourceTree = "<group>"; };
 		0D14E7151E48252500C002A6 /* TestSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwift.swift; sourceTree = "<group>"; };
 		0D14E7171E4828C500C002A6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D26A8221E5C142500D7DBFD /* IMTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestViewController.h; sourceTree = "<group>"; };
+		0D26A8231E5C142500D7DBFD /* IMTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestViewController.m; sourceTree = "<group>"; };
 		0D3E90B41E496C1700409701 /* AutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
 		0D3E90B51E496C1700409701 /* AutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
 		0D3E90B61E496C1700409701 /* AutoLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutViewController.xib; sourceTree = "<group>"; };
@@ -283,6 +286,15 @@
 			path = SwiftClass;
 			sourceTree = "<group>";
 		};
+		0D26A8211E5C13F700D7DBFD /* 融云IM */ = {
+			isa = PBXGroup;
+			children = (
+				0D26A8221E5C142500D7DBFD /* IMTestViewController.h */,
+				0D26A8231E5C142500D7DBFD /* IMTestViewController.m */,
+			);
+			path = "融云IM";
+			sourceTree = "<group>";
+		};
 		0D3E90B01E496BFC00409701 /* 自适应布局 */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +401,7 @@
 		0D871FF41DFA5B5B00728F35 /* SubClass */ = {
 			isa = PBXGroup;
 			children = (
+				0D26A8211E5C13F700D7DBFD /* 融云IM */,
 				0D3E910D1E52EA0D00409701 /* 动画 */,
 				0D3E90CB1E4C133C00409701 /* MRC测试 */,
 				0D3E90C41E4AED6F00409701 /* 多线程 */,
@@ -859,6 +872,7 @@
 				0D0BC0411DE71A4D000134B8 /* NavigationViewController.m in Sources */,
 				0D0BC03E1DE71A26000134B8 /* TabbarViewController.m in Sources */,
 				0DC983AD1E1CDC4D00F9D665 /* TimerCountDownCell.m in Sources */,
+				0D26A8241E5C142500D7DBFD /* IMTestViewController.m in Sources */,
 				0D93DE871DFEDBA0004FF0BF /* UIView+frame.m in Sources */,
 				0DA8BEA51E55760300049D3E /* CustomAutoTableViewCell.m in Sources */,
 				0DCDFF181DD1CAAF009F31F9 /* main.m in Sources */,

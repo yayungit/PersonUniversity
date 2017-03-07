@@ -15,16 +15,24 @@
 #import <WXApi.h>
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
-@interface AppDelegate ()
+#import <RongIMKit/RongIMKit.h>
+
+
+@interface AppDelegate () <RCIMUserInfoDataSource>
 @property (nonatomic, strong) LockerViewController *lockerViewController;
 @end
 static NSString *const BMAK = @"Lv0QmjMHDnQ9iO6sEyBNg01XWnhbExnq";
 static NSString *const UMAppKey = @"58733ab375ca35049e000aad";
 static NSString *const WX_AppKey = @"wx9ed67d121cd660b1";
 static NSString *const WX_AppSecret = @"9b65d6206d8aaf6070f359bce9177cfc";
+// 融云
+static NSString *const RongYunAppKey = @"uwd1c0sxuhwy1";
+static NSString *const RongYunAppSecret = @"X2mGEkqr43h9";
+static NSString *const RongYunToken = @"0f52+tFmt3IlHz9uQZuv+V21eZtTq2YMEAQwTuYI+4KSDk6phPfvAhIRYBMew++PEhEBquJkhMu8Yj7eXTgaUg==";
+
 @implementation AppDelegate
 
-// 架构
+
 
 
 
@@ -51,6 +59,24 @@ static NSString *const WX_AppSecret = @"9b65d6206d8aaf6070f359bce9177cfc";
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:WX_AppKey appSecret:WX_AppSecret redirectURL:nil];
 //    [WXApi registerApp:WX_AppKey];
     [Fabric with:@[[Crashlytics class]]];
+    
+    
+    // 注册融云
+    [[RCIM sharedRCIM] initWithAppKey:RongYunAppKey];
+    
+    [[RCIM sharedRCIM] connectWithToken:RongYunToken success:^(NSString *userId) {
+        YYLog(@"userId = %@", userId);
+        // 设置获取设置用户信息的datasource
+        [[RCIM sharedRCIM] setUserInfoDataSource:self];
+    } error:^(RCConnectErrorCode status) {
+        YYLog(@"错误码 = %ld",(long)status);
+    } tokenIncorrect:^{
+        //token过期或者不正确。
+        //如果设置了token有效期并且token过期，请重新请求您的服务器获取新的token
+        //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
+        YYLog(@"token错误");
+    }];
+    
     return YES;
 }
 // 展示左视图
@@ -91,6 +117,18 @@ static NSString *const WX_AppSecret = @"9b65d6206d8aaf6070f359bce9177cfc";
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - RCIMUserInfoDataSource
+- (void)getUserInfoWithUserId:(NSString *)userId
+                   completion:(void (^)(RCUserInfo *userInfo))completion {
+    if ([userId isEqualToString:@"test2"]) {
+        RCUserInfo *userinfo = [[RCUserInfo alloc] init];
+        userinfo.userId = userId;
+        userinfo.name = @"测试名称";
+        userinfo.portraitUri = @"http://rongcloud-web.qiniudn.com/docs_demo_rongcloud_logo.png";
+        return completion(userinfo);
+    }
+    return completion(nil);
+}
 
 
 @end

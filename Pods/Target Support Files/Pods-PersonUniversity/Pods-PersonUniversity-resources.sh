@@ -18,6 +18,9 @@ case "${TARGETED_DEVICE_FAMILY}" in
   2)
     TARGET_DEVICE_ARGS="--target-device ipad"
     ;;
+  3)
+    TARGET_DEVICE_ARGS="--target-device tv"
+    ;;
   *)
     TARGET_DEVICE_ARGS="--target-device mac"
     ;;
@@ -75,9 +78,29 @@ EOM
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle"
+  install_resource "RongCloudIM/RongCloudIM/RongCloud.bundle"
+  install_resource "RongCloudIM/RongCloudIM/en.lproj"
+  install_resource "RongCloudIM/RongCloudIM/zh-Hans.lproj"
+  install_resource "RongCloudIM/RongCloudIM/Emoji.plist"
+  install_resource "RongCloudIM/RongCloudIM/RCConfig.plist"
+  install_resource "RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle"
+  install_resource "RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj"
+  install_resource "RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj"
+  install_resource "RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle"
+  install_resource "RongCloudIM/RongCloudIM/BQMM.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle"
+  install_resource "RongCloudIM/RongCloudIM/RongCloud.bundle"
+  install_resource "RongCloudIM/RongCloudIM/en.lproj"
+  install_resource "RongCloudIM/RongCloudIM/zh-Hans.lproj"
+  install_resource "RongCloudIM/RongCloudIM/Emoji.plist"
+  install_resource "RongCloudIM/RongCloudIM/RCConfig.plist"
+  install_resource "RongCloudIM/RongCloudIM/JrmfIMLib/JResource.bundle"
+  install_resource "RongCloudIM/RongCloudIM/JrmfIMLib/en.lproj"
+  install_resource "RongCloudIM/RongCloudIM/JrmfIMLib/zh-Hans.lproj"
+  install_resource "RongCloudIM/RongCloudIM/AlipaySDK/AlipaySDK.bundle"
+  install_resource "RongCloudIM/RongCloudIM/BQMM.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"

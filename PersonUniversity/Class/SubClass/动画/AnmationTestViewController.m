@@ -11,6 +11,7 @@
 #import <AVFoundation/AVFoundation.h>
 @interface AnmationTestViewController ()
 
+
 @property (nonatomic, strong) UIView *redView;
 // 录音设备
 @property (nonatomic, strong) AVAudioRecorder *recorider;
@@ -37,7 +38,9 @@
     [_timer invalidate];
     _timer = nil;
 }
-
+- (void)dealloc {
+    
+}
 //SFSpeechRecognizer：这个类是语音识别的操作类，用于语音识别用户权限的申请，语言环境的设置，语音模式的设置以及向Apple服务发送语音识别的请求。
 //SFSpeechRecognitionTask：这个类是语音识别服务请求任务类，每一个语音识别请求都可以抽象为一个SFSpeechRecognitionTask实例，其中SFSpeechRecognitionTaskDelegate协议中约定了许多请求任务过程中的监听方法。
 //SFSpeechRecognitionRequest:语音识别请求类，需要通过其子类来进行实例化。
@@ -266,6 +269,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 

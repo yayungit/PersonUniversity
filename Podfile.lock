@@ -20,11 +20,30 @@ PODS:
   - FMDB/standard (2.6.2)
   - Masonry (1.0.2)
   - PureLayout (3.0.2)
+  - RongCloudIM (2.8.6):
+    - RongCloudIM/CallKit (= 2.8.6)
+    - RongCloudIM/CallLib (= 2.8.6)
+    - RongCloudIM/IMKit (= 2.8.6)
+    - RongCloudIM/IMLib (= 2.8.6)
+    - RongCloudIM/RedPacket (= 2.8.6)
+    - RongCloudIM/Sticker (= 2.8.6)
+  - RongCloudIM/CallKit (2.8.6):
+    - RongCloudIM/CallLib
+    - RongCloudIM/IMKit
+  - RongCloudIM/CallLib (2.8.6):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMKit (2.8.6):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (2.8.6)
+  - RongCloudIM/RedPacket (2.8.6):
+    - RongCloudIM/IMKit
+  - RongCloudIM/Sticker (2.8.6):
+    - RongCloudIM/IMKit
   - UITableView+FDTemplateLayoutCell (1.4)
-  - UMengUShare/Core (6.2.1):
+  - UMengUShare/Core (6.2.2):
     - UMengUShare/Network
-  - UMengUShare/Network (6.2.1)
-  - UMengUShare/Social/WeChat (6.2.1):
+  - UMengUShare/Network (6.2.2)
+  - UMengUShare/Social/WeChat (6.2.2):
     - UMengUShare/Core
 
 DEPENDENCIES:
@@ -33,6 +52,7 @@ DEPENDENCIES:
   - FMDB
   - Masonry
   - PureLayout
+  - RongCloudIM (~> 2.8.6)
   - UITableView+FDTemplateLayoutCell
   - UMengUShare/Social/WeChat
 
@@ -42,9 +62,10 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  RongCloudIM: f35630e60f7d393ea93b04d4cd6152c9191b8d05
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
-  UMengUShare: 583ac067e747c66429d5063896da0e77c4fe7688
+  UMengUShare: fc0a98b8d5297632e82874318fd72a10d17da228
 
-PODFILE CHECKSUM: 88893d71297618938b39a9b1afe7656e15edd97b
+PODFILE CHECKSUM: 37c3858d5743c653bc7f0109afc89599b712349d
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

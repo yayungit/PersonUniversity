@@ -53,6 +53,8 @@ static NSString *const kTimerCountDownCell = @"TimerCountDownCell";
     [self presentViewController:view animated:YES completion:nil];
 }
 
-
+- (void)dealloc {
+    [[TimerManger shareInstand] stop];
+}
 
 @end

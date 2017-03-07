@@ -13,4 +13,5 @@
 + (instancetype)shareInstand;
 - (void)start;
 - (void)reload;
+- (void)stop;
 @end
