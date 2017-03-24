@@ -21,11 +21,11 @@
     for (UICollectionViewLayoutAttributes *attr in arrayAttrs) {
         // 3.1 计算每个cell的中心点距离
         CGFloat distance = ABS(attr.center.x - centerX);
-        
         // 3.2 距离越大，缩放比越小，距离越小，缩放比越大
-        CGFloat factor = 0.003;
+        CGFloat factor = 0.001;
         CGFloat scale = 1 / (1 + distance * factor);
         attr.transform = CGAffineTransformMakeScale(scale, scale);
+        
     }
     return arrayAttrs;
 }
@@ -41,6 +41,7 @@
 /// @param velocity              速率,周率
 ///
 /// @return 人为要让它停留的位置
+/*
 - (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity {
     // 1.计算中心点位置
     CGFloat centerX = proposedContentOffset.x + self.collectionView.bounds.size.width * 0.5;
@@ -78,4 +79,5 @@
     
     return CGPointMake(proposedContentOffset.x + offsetX, proposedContentOffset.y);
 }
+ */
 @end

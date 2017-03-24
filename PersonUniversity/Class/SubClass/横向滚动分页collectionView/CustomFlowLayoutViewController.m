@@ -10,13 +10,22 @@
 #import "CustomCollectionViewCell.h"
 #import "ScrollScale.h" // 滚动中间放大
 @interface CustomFlowLayoutViewController () <UICollectionViewDelegate,UICollectionViewDataSource>
+{
+    NSInteger _currentIndex;
+    
+    CGFloat _dragStartX;
+    
+    CGFloat _dragEndX;
+}
 @property (weak, nonatomic) IBOutlet UICollectionView *myCollectionView;
 @property (nonatomic, strong) UICollectionViewFlowLayout *layout;
 @property (nonatomic, strong) NSArray *arr;
 @property (nonatomic, assign) NSInteger itemInSection;
 @property (nonatomic, strong) NSArray *cellarr;
 @end
-
+//居中卡片宽度与据屏幕宽度比例
+static float CardWidthScale = 0.7f;
+static float CardHeightScale = 0.8f;
 static NSString *const kCustomCollectionViewCell = @"CustomCollectionViewCell";
 
 @implementation CustomFlowLayoutViewController
@@ -39,7 +48,7 @@ static NSString *const kCustomCollectionViewCell = @"CustomCollectionViewCell";
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    layout.itemSize = CGSizeMake(kSCREENWIDTH, 150);
+    //layout.itemSize = CGSizeMake(kSCREENWIDTH*0.7, (kSCREENHEIGHT)*0.8);
     
     _myCollectionView.collectionViewLayout = layout;
     _myCollectionView.showsVerticalScrollIndicator = NO;
@@ -88,6 +97,74 @@ static NSString *const kCustomCollectionViewCell = @"CustomCollectionViewCell";
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+//配置cell居中
+-(void)fixCellToCenter
+{
+    //最小滚动距离
+    float dragMiniDistance = self.view.bounds.size.width/20.0f;
+    if (_dragStartX -  _dragEndX >= dragMiniDistance) {
+        _currentIndex -= 1;//向右
+    }else if(_dragEndX -  _dragStartX >= dragMiniDistance){
+        _currentIndex += 1;//向左
+    }
+    NSInteger maxIndex = [_myCollectionView numberOfItemsInSection:0] - 1;
+    _currentIndex = _currentIndex <= 0 ? 0 : _currentIndex;
+    _currentIndex = _currentIndex >= maxIndex ? maxIndex : _currentIndex;
+    
+    [self scrollToCenter];
+}
+-(void)scrollToCenter
+{
+    [_myCollectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:_currentIndex inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+    
+    
+}
+
+//手指拖动开始
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    _dragStartX = scrollView.contentOffset.x;
+}
+
+//手指拖动停止
+-(void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
+{
+    _dragEndX = scrollView.contentOffset.x;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self fixCellToCenter];
+    });
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    _currentIndex = indexPath.row;
+    [self scrollToCenter];
+}
+
+//卡片宽度
+-(CGFloat)cellWidth
+{
+    return self.view.bounds.size.width * CardWidthScale;
+}
+
+//卡片间隔
+-(float)cellMargin
+{
+    return (self.view.bounds.size.width - [self cellWidth])/4;
+}
+
+//设置左右缩进
+-(CGFloat)collectionInset
+{
+    return self.view.bounds.size.width/2.0f - [self cellWidth]/2.0f;
+}
+
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(0, [self collectionInset], 0, [self collectionInset]);
 }
 
 
