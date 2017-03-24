@@ -54,6 +54,12 @@
 		0D9EA3A31E28BDE3009EE359 /* FMDBManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9EA3A21E28BDE3009EE359 /* FMDBManger.m */; };
 		0DA8BEA51E55760300049D3E /* CustomAutoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8BEA31E55760300049D3E /* CustomAutoTableViewCell.m */; };
 		0DA8BEA61E55760300049D3E /* CustomAutoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DA8BEA41E55760300049D3E /* CustomAutoTableViewCell.xib */; };
+		0DC366631E82472C00DD0D45 /* CustomFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC366611E82472C00DD0D45 /* CustomFlowLayoutViewController.m */; };
+		0DC366641E82472C00DD0D45 /* CustomFlowLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC366621E82472C00DD0D45 /* CustomFlowLayoutViewController.xib */; };
+		0DC366681E824A9800DD0D45 /* CustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC366661E824A9800DD0D45 /* CustomCollectionViewCell.m */; };
+		0DC366691E824A9800DD0D45 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC366671E824A9800DD0D45 /* CustomCollectionViewCell.xib */; };
+		0DC3666F1E82607E00DD0D45 /* AllLeftFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC3666E1E82607E00DD0D45 /* AllLeftFlowLayout.m */; };
+		0DC366731E835D9700DD0D45 /* ScrollScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC366721E835D9700DD0D45 /* ScrollScale.m */; };
 		0DC983AD1E1CDC4D00F9D665 /* TimerCountDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC983AB1E1CDC4D00F9D665 /* TimerCountDownCell.m */; };
 		0DC983AE1E1CDC4D00F9D665 /* TimerCountDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC983AC1E1CDC4D00F9D665 /* TimerCountDownCell.xib */; };
 		0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */; };
@@ -158,6 +164,16 @@
 		0DA8BEA21E55760300049D3E /* CustomAutoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAutoTableViewCell.h; sourceTree = "<group>"; };
 		0DA8BEA31E55760300049D3E /* CustomAutoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAutoTableViewCell.m; sourceTree = "<group>"; };
 		0DA8BEA41E55760300049D3E /* CustomAutoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAutoTableViewCell.xib; sourceTree = "<group>"; };
+		0DC366601E82472C00DD0D45 /* CustomFlowLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFlowLayoutViewController.h; sourceTree = "<group>"; };
+		0DC366611E82472C00DD0D45 /* CustomFlowLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFlowLayoutViewController.m; sourceTree = "<group>"; };
+		0DC366621E82472C00DD0D45 /* CustomFlowLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomFlowLayoutViewController.xib; sourceTree = "<group>"; };
+		0DC366651E824A9800DD0D45 /* CustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewCell.h; sourceTree = "<group>"; };
+		0DC366661E824A9800DD0D45 /* CustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewCell.m; sourceTree = "<group>"; };
+		0DC366671E824A9800DD0D45 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		0DC3666D1E82607E00DD0D45 /* AllLeftFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllLeftFlowLayout.h; sourceTree = "<group>"; };
+		0DC3666E1E82607E00DD0D45 /* AllLeftFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllLeftFlowLayout.m; sourceTree = "<group>"; };
+		0DC366711E835D9700DD0D45 /* ScrollScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollScale.h; sourceTree = "<group>"; };
+		0DC366721E835D9700DD0D45 /* ScrollScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollScale.m; sourceTree = "<group>"; };
 		0DC983AA1E1CDC4D00F9D665 /* TimerCountDownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerCountDownCell.h; sourceTree = "<group>"; };
 		0DC983AB1E1CDC4D00F9D665 /* TimerCountDownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerCountDownCell.m; sourceTree = "<group>"; };
 		0DC983AC1E1CDC4D00F9D665 /* TimerCountDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerCountDownCell.xib; sourceTree = "<group>"; };
@@ -401,6 +417,7 @@
 		0D871FF41DFA5B5B00728F35 /* SubClass */ = {
 			isa = PBXGroup;
 			children = (
+				0DC3665F1E8246EF00DD0D45 /* 横向滚动无限轮播collectionView */,
 				0D26A8211E5C13F700D7DBFD /* 融云IM */,
 				0D3E910D1E52EA0D00409701 /* 动画 */,
 				0D3E90CB1E4C133C00409701 /* MRC测试 */,
@@ -490,6 +507,24 @@
 				0D14E6F81E481DCB00C002A6 /* UIColor+Hex.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		0DC3665F1E8246EF00DD0D45 /* 横向滚动无限轮播collectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0DC366601E82472C00DD0D45 /* CustomFlowLayoutViewController.h */,
+				0DC366611E82472C00DD0D45 /* CustomFlowLayoutViewController.m */,
+				0DC366621E82472C00DD0D45 /* CustomFlowLayoutViewController.xib */,
+				0DC366651E824A9800DD0D45 /* CustomCollectionViewCell.h */,
+				0DC366661E824A9800DD0D45 /* CustomCollectionViewCell.m */,
+				0DC366671E824A9800DD0D45 /* CustomCollectionViewCell.xib */,
+				0DC3666D1E82607E00DD0D45 /* AllLeftFlowLayout.h */,
+				0DC3666E1E82607E00DD0D45 /* AllLeftFlowLayout.m */,
+				0DC366711E835D9700DD0D45 /* ScrollScale.h */,
+				0DC366721E835D9700DD0D45 /* ScrollScale.m */,
+			);
+			name = "横向滚动无限轮播collectionView";
+			path = "横向滚动分页collectionView";
 			sourceTree = "<group>";
 		};
 		0DC983A91E1CDC2F00F9D665 /* View */ = {
@@ -765,6 +800,8 @@
 				0DA8BEA61E55760300049D3E /* CustomAutoTableViewCell.xib in Resources */,
 				0D0D6DC51DE83ED000FA3D1A /* CommunityViewController.xib in Resources */,
 				0D3E90B81E496C1700409701 /* AutoLayoutViewController.xib in Resources */,
+				0DC366691E824A9800DD0D45 /* CustomCollectionViewCell.xib in Resources */,
+				0DC366641E82472C00DD0D45 /* CustomFlowLayoutViewController.xib in Resources */,
 				0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */,
 				0DCDFF291DD1CCA3009F31F9 /* LeftViewController.xib in Resources */,
 				0DCDFF211DD1CC05009F31F9 /* MainViewController.xib in Resources */,
@@ -860,6 +897,7 @@
 				0D14E6F91E481DCB00C002A6 /* UIColor+Hex.m in Sources */,
 				0D3E90C01E4999BE00409701 /* UIFont+XM.m in Sources */,
 				0D3E90BC1E497C7C00409701 /* AutoTestTableViewCell.m in Sources */,
+				0DC366681E824A9800DD0D45 /* CustomCollectionViewCell.m in Sources */,
 				0D8720011DFA5C6100728F35 /* SegmentViewController.m in Sources */,
 				0D3E90C91E4AED9900409701 /* GCDTestViewController.m in Sources */,
 				0D5DE2211E16546600D4219C /* TimerManger.m in Sources */,
@@ -872,6 +910,7 @@
 				0D0BC0411DE71A4D000134B8 /* NavigationViewController.m in Sources */,
 				0D0BC03E1DE71A26000134B8 /* TabbarViewController.m in Sources */,
 				0DC983AD1E1CDC4D00F9D665 /* TimerCountDownCell.m in Sources */,
+				0DC3666F1E82607E00DD0D45 /* AllLeftFlowLayout.m in Sources */,
 				0D26A8241E5C142500D7DBFD /* IMTestViewController.m in Sources */,
 				0D93DE871DFEDBA0004FF0BF /* UIView+frame.m in Sources */,
 				0DA8BEA51E55760300049D3E /* CustomAutoTableViewCell.m in Sources */,
@@ -880,8 +919,10 @@
 				0D3E91101E52EA2B00409701 /* AnmationTestViewController.m in Sources */,
 				0DCDFF201DD1CC05009F31F9 /* MainViewController.m in Sources */,
 				0D14E7161E48252500C002A6 /* TestSwift.swift in Sources */,
+				0DC366731E835D9700DD0D45 /* ScrollScale.m in Sources */,
 				0DCDFF0E1DD1CA95009F31F9 /* AppDelegate.mm in Sources */,
 				0D3E90CE1E4C134E00409701 /* MRCTestViewController.m in Sources */,
+				0DC366631E82472C00DD0D45 /* CustomFlowLayoutViewController.m in Sources */,
 				0D9EA3A31E28BDE3009EE359 /* FMDBManger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

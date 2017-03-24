@@ -30,7 +30,6 @@
 //    　　NSURLRequestReloadRevalidatingCacheData = 5 指定如果已存的缓存数据被提供它的源段确认为有效则允许使用缓存数据响应请求，否则从源段加载数据。
 //    　　只有响应http和https的请求会被缓存。ftp和文件协议当被缓存策略允许的时候尝试接入源段。自定义的NSURLProtocol类能够保护缓存，如果它们被选择使用的话。
 //    
-//    　　小结：NSURLRequestReturnCacheDataDontLoad是用于离线模式的，我为了能让用户在离线下面阅读，我就设计了当没有网络的时候的策略为NSURLRequestReturnCacheDataDontLoad
     NSURLSession *session = [NSURLSession sharedSession];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://baidu.com"] cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
 //    request.HTTPMethod = @"POST";

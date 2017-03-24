@@ -14,6 +14,7 @@
 #import "MRCTestViewController.h"
 #import "AnmationTestViewController.h"
 #import "IMTestViewController.h"
+#import "CustomFlowLayoutViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -26,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
-    classArray = @[@"多线程测试",@"顶部分类类别",@"多个cell添加定时器,自适应布局",@"MRCTest",@"动画和iOS10原生语音识别",@"融云IM"];
+    classArray = @[@"多线程测试",@"顶部分类类别",@"多个cell添加定时器,自适应布局",@"MRCTest",@"动画和iOS10原生语音识别",@"融云IM",@"重写flowlayout实现横向滚动翻页"];
     [self configUI];
 }
 // MARK: CONFIG-UI
@@ -80,6 +81,11 @@
         case 5: {
             IMTestViewController *IMVC = [IMTestViewController new];
             [self.navigationController pushViewController:IMVC animated:YES];
+        }
+            break;
+        case 6: {
+            CustomFlowLayoutViewController *customFLowVC = [CustomFlowLayoutViewController new];
+            [self.navigationController pushViewController:customFLowVC animated:YES];
         }
             break;
         default:
