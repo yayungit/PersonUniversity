@@ -8,6 +8,7 @@
 
 #import "SegmentViewController.h"
 #import "SegmentCustonView.h"
+#import "UIViewController+YYHUD.h"
 @interface SegmentViewController ()<ClassButtonClickProtocol>
 
 @end
@@ -21,12 +22,19 @@
     [self.view addSubview:segmentCustonView];
     
     segmentCustonView.classButtonDelegate = self;
-    
 }
 - (void)didClassButtonClick:(UIButton *)button andButtonIndex:(NSInteger)index {
     // 断言测试；
-
+    [self.HUD showMessage:@"ok?"];
+    
 }
+
+
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.HUD hide];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

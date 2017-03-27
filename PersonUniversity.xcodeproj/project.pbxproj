@@ -52,6 +52,8 @@
 		0D8720051DFA5C9100728F35 /* SegmentCustonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D8720041DFA5C9100728F35 /* SegmentCustonView.m */; };
 		0D93DE871DFEDBA0004FF0BF /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D93DE861DFEDBA0004FF0BF /* UIView+frame.m */; };
 		0D9EA3A31E28BDE3009EE359 /* FMDBManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9EA3A21E28BDE3009EE359 /* FMDBManger.m */; };
+		0DA6B0891E850A2900B7B22F /* UIViewController+YYHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA6B0881E850A2900B7B22F /* UIViewController+YYHUD.m */; };
+		0DA6B08C1E850A6F00B7B22F /* YYHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA6B08B1E850A6F00B7B22F /* YYHUD.m */; };
 		0DA8BEA51E55760300049D3E /* CustomAutoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DA8BEA31E55760300049D3E /* CustomAutoTableViewCell.m */; };
 		0DA8BEA61E55760300049D3E /* CustomAutoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DA8BEA41E55760300049D3E /* CustomAutoTableViewCell.xib */; };
 		0DC366631E82472C00DD0D45 /* CustomFlowLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC366611E82472C00DD0D45 /* CustomFlowLayoutViewController.m */; };
@@ -161,6 +163,10 @@
 		0D93DE861DFEDBA0004FF0BF /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		0D9EA3A11E28BDE3009EE359 /* FMDBManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBManger.h; sourceTree = "<group>"; };
 		0D9EA3A21E28BDE3009EE359 /* FMDBManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBManger.m; sourceTree = "<group>"; };
+		0DA6B0871E850A2900B7B22F /* UIViewController+YYHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YYHUD.h"; sourceTree = "<group>"; };
+		0DA6B0881E850A2900B7B22F /* UIViewController+YYHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YYHUD.m"; sourceTree = "<group>"; };
+		0DA6B08A1E850A6F00B7B22F /* YYHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYHUD.h; sourceTree = "<group>"; };
+		0DA6B08B1E850A6F00B7B22F /* YYHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYHUD.m; sourceTree = "<group>"; };
 		0DA8BEA21E55760300049D3E /* CustomAutoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAutoTableViewCell.h; sourceTree = "<group>"; };
 		0DA8BEA31E55760300049D3E /* CustomAutoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAutoTableViewCell.m; sourceTree = "<group>"; };
 		0DA8BEA41E55760300049D3E /* CustomAutoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomAutoTableViewCell.xib; sourceTree = "<group>"; };
@@ -473,6 +479,8 @@
 				0D3E90BF1E4999BE00409701 /* UIFont+XM.m */,
 				0D3E90C11E499A3200409701 /* UIView+auto.h */,
 				0D3E90C21E499A3200409701 /* UIView+auto.m */,
+				0DA6B0871E850A2900B7B22F /* UIViewController+YYHUD.h */,
+				0DA6B0881E850A2900B7B22F /* UIViewController+YYHUD.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -494,6 +502,8 @@
 				0D9EA3A21E28BDE3009EE359 /* FMDBManger.m */,
 				0D759C271E45D60E00FCE6D3 /* Tools.h */,
 				0D759C281E45D60E00FCE6D3 /* Tools.m */,
+				0DA6B08A1E850A6F00B7B22F /* YYHUD.h */,
+				0DA6B08B1E850A6F00B7B22F /* YYHUD.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -908,6 +918,7 @@
 				0D3E910C1E4DAFAB00409701 /* Http.m in Sources */,
 				0DCDFF281DD1CCA3009F31F9 /* LeftViewController.m in Sources */,
 				0D0BC0411DE71A4D000134B8 /* NavigationViewController.m in Sources */,
+				0DA6B0891E850A2900B7B22F /* UIViewController+YYHUD.m in Sources */,
 				0D0BC03E1DE71A26000134B8 /* TabbarViewController.m in Sources */,
 				0DC983AD1E1CDC4D00F9D665 /* TimerCountDownCell.m in Sources */,
 				0DC3666F1E82607E00DD0D45 /* AllLeftFlowLayout.m in Sources */,
@@ -916,6 +927,7 @@
 				0DA8BEA51E55760300049D3E /* CustomAutoTableViewCell.m in Sources */,
 				0DCDFF181DD1CAAF009F31F9 /* main.m in Sources */,
 				0D3E90B71E496C1700409701 /* AutoLayoutViewController.m in Sources */,
+				0DA6B08C1E850A6F00B7B22F /* YYHUD.m in Sources */,
 				0D3E91101E52EA2B00409701 /* AnmationTestViewController.m in Sources */,
 				0DCDFF201DD1CC05009F31F9 /* MainViewController.m in Sources */,
 				0D14E7161E48252500C002A6 /* TestSwift.swift in Sources */,

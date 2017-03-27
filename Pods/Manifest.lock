@@ -19,6 +19,7 @@ PODS:
     - FMDB/standard (= 2.6.2)
   - FMDB/standard (2.6.2)
   - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
   - PureLayout (3.0.2)
   - RongCloudIM (2.8.6):
     - RongCloudIM/CallKit (= 2.8.6)
@@ -51,6 +52,7 @@ DEPENDENCIES:
   - BaiduMapKit (~> 3.2.1)
   - FMDB
   - Masonry
+  - MBProgressHUD
   - PureLayout
   - RongCloudIM (~> 2.8.6)
   - UITableView+FDTemplateLayoutCell
@@ -61,11 +63,12 @@ SPEC CHECKSUMS:
   BaiduMapKit: 9c748785aa3dddfc41dcb70c14b21ce32f680930
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   RongCloudIM: f35630e60f7d393ea93b04d4cd6152c9191b8d05
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   UMengUShare: fc0a98b8d5297632e82874318fd72a10d17da228
 
-PODFILE CHECKSUM: 37c3858d5743c653bc7f0109afc89599b712349d
+PODFILE CHECKSUM: 148f0c462b5b275e353a9a63dc061ddfc02f1c5d
 
 COCOAPODS: 1.2.0
