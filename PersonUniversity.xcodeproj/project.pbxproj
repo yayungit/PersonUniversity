@@ -28,6 +28,7 @@
 		0D3E91101E52EA2B00409701 /* AnmationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E910F1E52EA2B00409701 /* AnmationTestViewController.m */; };
 		0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE21D1E16401B00D4219C /* TimerViewController.m */; };
 		0D5DE2211E16546600D4219C /* TimerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE2201E16546600D4219C /* TimerManger.m */; };
+		0D70F63F1E88AB4F0059949E /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D70F63E1E88AB4F0059949E /* WKWebViewController.m */; };
 		0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D759C281E45D60E00FCE6D3 /* Tools.m */; };
 		0D7AC11C1E2DC90600EF72BE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7AC11A1E2DC90600EF72BE /* Fabric.framework */; };
 		0D7AC11D1E2DC90600EF72BE /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7AC11B1E2DC90600EF72BE /* Crashlytics.framework */; };
@@ -133,6 +134,8 @@
 		0D5DE21D1E16401B00D4219C /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0D5DE21F1E16546600D4219C /* TimerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManger.h; sourceTree = "<group>"; };
 		0D5DE2201E16546600D4219C /* TimerManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerManger.m; sourceTree = "<group>"; };
+		0D70F63D1E88AB4F0059949E /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		0D70F63E1E88AB4F0059949E /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		0D759C271E45D60E00FCE6D3 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		0D759C281E45D60E00FCE6D3 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		0D7AC11A1E2DC90600EF72BE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
@@ -420,9 +423,19 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		0D70F6391E88A9E50059949E /* WKWebKit */ = {
+			isa = PBXGroup;
+			children = (
+				0D70F63D1E88AB4F0059949E /* WKWebViewController.h */,
+				0D70F63E1E88AB4F0059949E /* WKWebViewController.m */,
+			);
+			path = WKWebKit;
+			sourceTree = "<group>";
+		};
 		0D871FF41DFA5B5B00728F35 /* SubClass */ = {
 			isa = PBXGroup;
 			children = (
+				0D70F6391E88A9E50059949E /* WKWebKit */,
 				0DC3665F1E8246EF00DD0D45 /* 横向滚动无限轮播collectionView */,
 				0D26A8211E5C13F700D7DBFD /* 融云IM */,
 				0D3E910D1E52EA0D00409701 /* 动画 */,
@@ -918,6 +931,7 @@
 				0D3E910C1E4DAFAB00409701 /* Http.m in Sources */,
 				0DCDFF281DD1CCA3009F31F9 /* LeftViewController.m in Sources */,
 				0D0BC0411DE71A4D000134B8 /* NavigationViewController.m in Sources */,
+				0D70F63F1E88AB4F0059949E /* WKWebViewController.m in Sources */,
 				0DA6B0891E850A2900B7B22F /* UIViewController+YYHUD.m in Sources */,
 				0D0BC03E1DE71A26000134B8 /* TabbarViewController.m in Sources */,
 				0DC983AD1E1CDC4D00F9D665 /* TimerCountDownCell.m in Sources */,
