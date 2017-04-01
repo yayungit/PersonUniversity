@@ -15,4 +15,5 @@ pod 'AFNetworking', '~> 3.1.0'
 pod 'MBProgressHUD'
 pod 'UITableView+FDTemplateLayoutCell'
 pod 'RongCloudIM', '~> 2.8.6' #2.8.0之后统一用RongCloudIM，RongCloudIM/IMLib', RongCloudIM/IMKit' 都以废弃掉。
+pod 'JSPatchPlatform', '~> 1.6.6'
 end

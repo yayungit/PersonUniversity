@@ -16,7 +16,8 @@
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 #import <RongIMKit/RongIMKit.h>
-
+#import <JSPatchPlatform/JSPatch.h>
+#import <JPEngine.h>
 
 @interface AppDelegate () <RCIMUserInfoDataSource>
 @property (nonatomic, strong) LockerViewController *lockerViewController;
@@ -77,12 +78,28 @@ static NSString *const RongYunToken = @"0f52+tFmt3IlHz9uQZuv+V21eZtTq2YMEAQwTuYI
         YYLog(@"token错误");
     }];
     
+//    [JSPatch startWithAppKey:@"f869a8a5aed12b7f"];
+//    [JSPatch setupRSAPublicKey:@"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9XtvRoBF4ECxY6AYTbhbLWGZ1\nWwCqn4uospjWZytu1NKFdPuW3jwyLySOpUqgbPwfSwPtzi8i2L2aTC58OeYoX7mD\n7yALGI5s+iX0fcoh//p+UQfP5r8deMRvJN5kWmXQrzssiEVHqA7lMDLBvw2jURUE\ncat7+9N0SVjBv+Ax1QIDAQAB\n-----END PUBLIC KEY-----"];
+//#ifdef DEBUG
+//    [JSPatch setupDevelopment];
+//#endif
+//      [JSPatch sync];
+////
+//    [JSPatch setupCallback:^(JPCallbackType type, NSDictionary *data, NSError *error) {
+//        if (type == JPCallbackTypeJSException) {
+//            NSAssert(NO, data[@"msg"]);
+//        }
+//    }];
+    [JSPatch testScriptInBundle];
+   
+
     return YES;
 }
 // 展示左视图
 - (void)lefClick:(UIBarButtonItem *)item {
     [_lockerViewController showLeftV];
 }
+
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
     BOOL resule = [[UMSocialManager defaultManager] handleOpenURL:url];

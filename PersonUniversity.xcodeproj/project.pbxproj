@@ -15,6 +15,8 @@
 		0D14E7161E48252500C002A6 /* TestSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D14E7151E48252500C002A6 /* TestSwift.swift */; };
 		0D14E7181E4828C500C002A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D14E7171E4828C500C002A6 /* ViewController.swift */; };
 		0D26A8241E5C142500D7DBFD /* IMTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D26A8231E5C142500D7DBFD /* IMTestViewController.m */; };
+		0D2D91301E8F3CF9006D2361 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D2D912F1E8F3CF9006D2361 /* JavaScriptCore.framework */; };
+		0D2D91321E8F44C0006D2361 /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 0D2D91311E8F44C0006D2361 /* main.js */; };
 		0D3E90B71E496C1700409701 /* AutoLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90B51E496C1700409701 /* AutoLayoutViewController.m */; };
 		0D3E90B81E496C1700409701 /* AutoLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3E90B61E496C1700409701 /* AutoLayoutViewController.xib */; };
 		0D3E90BC1E497C7C00409701 /* AutoTestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90BA1E497C7C00409701 /* AutoTestTableViewCell.m */; };
@@ -113,6 +115,9 @@
 		0D14E7171E4828C500C002A6 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0D26A8221E5C142500D7DBFD /* IMTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMTestViewController.h; sourceTree = "<group>"; };
 		0D26A8231E5C142500D7DBFD /* IMTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMTestViewController.m; sourceTree = "<group>"; };
+		0D2D912F1E8F3CF9006D2361 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		0D2D91311E8F44C0006D2361 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		0D2D91331E8F46D3006D2361 /* PersonUniversity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PersonUniversity.entitlements; sourceTree = "<group>"; };
 		0D3E90B41E496C1700409701 /* AutoLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutViewController.h; sourceTree = "<group>"; };
 		0D3E90B51E496C1700409701 /* AutoLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutViewController.m; sourceTree = "<group>"; };
 		0D3E90B61E496C1700409701 /* AutoLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoLayoutViewController.xib; sourceTree = "<group>"; };
@@ -223,6 +228,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D2D91301E8F3CF9006D2361 /* JavaScriptCore.framework in Frameworks */,
 				0D7FCBAA1E277E3500D4429E /* libSocialWeChat.a in Frameworks */,
 				0D7FCBAB1E277E3500D4429E /* libWeChatSDK.a in Frameworks */,
 				0D7AC11D1E2DC90600EF72BE /* Crashlytics.framework in Frameworks */,
@@ -605,6 +611,7 @@
 		0DCDFED71DD1C99F009F31F9 /* PersonUniversity */ = {
 			isa = PBXGroup;
 			children = (
+				0D2D91331E8F46D3006D2361 /* PersonUniversity.entitlements */,
 				0DCDFEE41DD1C99F009F31F9 /* Assets.xcassets */,
 				0D93DE801DFEDAF2004FF0BF /* Category */,
 				0D93DE811DFEDAF2004FF0BF /* PCH */,
@@ -621,6 +628,7 @@
 		0DCDFED81DD1C99F009F31F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0D2D91311E8F44C0006D2361 /* main.js */,
 				0DCDFF131DD1CAAF009F31F9 /* main */,
 			);
 			name = "Supporting Files";
@@ -692,6 +700,7 @@
 		6EA52BA5F934CC420E1E8582 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0D2D912F1E8F3CF9006D2361 /* JavaScriptCore.framework */,
 				0D7FCBA81E277E3500D4429E /* libSocialWeChat.a */,
 				0D7FCBA91E277E3500D4429E /* libWeChatSDK.a */,
 				0D7FCB911E237D1D00D4429E /* libcrypto.a */,
@@ -796,6 +805,11 @@
 						DevelopmentTeam = J6HTH2R28B;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					0DCDFEED1DD1C99F009F31F9 = {
 						CreatedOnToolsVersion = 8.0;
@@ -845,6 +859,7 @@
 				0DC366641E82472C00DD0D45 /* CustomFlowLayoutViewController.xib in Resources */,
 				0DCDFEE51DD1C99F009F31F9 /* Assets.xcassets in Resources */,
 				0DCDFF291DD1CCA3009F31F9 /* LeftViewController.xib in Resources */,
+				0D2D91321E8F44C0006D2361 /* main.js in Resources */,
 				0DCDFF211DD1CC05009F31F9 /* MainViewController.xib in Resources */,
 				0DCDFF171DD1CAAF009F31F9 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -1110,6 +1125,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PersonUniversity/PersonUniversity.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J6HTH2R28B;
@@ -1129,7 +1145,7 @@
 					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat",
 				);
 				MODULEMAP_PRIVATE_FILE = "PersonUniversity-Swift.h";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hk.ddg;
+				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5693725d-d303-4940-a625-60fb5bd9715c";
 				PROVISIONING_PROFILE_SPECIFIER = "ddg-development";
@@ -1145,6 +1161,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PersonUniversity/PersonUniversity.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J6HTH2R28B;
@@ -1164,7 +1181,7 @@
 					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat",
 				);
 				MODULEMAP_PRIVATE_FILE = "PersonUniversity-Swift.h";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.hk.ddg;
+				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "5693725d-d303-4940-a625-60fb5bd9715c";
 				PROVISIONING_PROFILE_SPECIFIER = "ddg-development";
