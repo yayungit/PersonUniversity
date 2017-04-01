@@ -77,20 +77,22 @@ static NSString *const RongYunToken = @"0f52+tFmt3IlHz9uQZuv+V21eZtTq2YMEAQwTuYI
         //如果没有设置token有效期却提示token错误，请检查您客户端和服务器的appkey是否匹配，还有检查您获取token的流程。
         YYLog(@"token错误");
     }];
+    YYLog(@"%@",NSSearchPathForDirectoriesInDomains(NSDocumentationDirectory, NSUserDomainMask, YES));
+    [JSPatch startWithAppKey:@"f869a8a5aed12b7f"];
+
+    [JSPatch setupRSAPublicKey:@"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDZwhdlImcUKNL+wlvG2vAwrIqr\nvI3Wlf2xlbE38YzFT93v2LufCth9/ujGcgcArjaebP6k5/RzNceO0hEde0TydAcY\n6jUZa9dcGYReMTy0dWv5Rt1ebq7jw4XidUPeCZR31QEvcXAA4znwORbV2RVjwNDX\nbGYeehbWPZhPV8u3AwIDAQAB\n-----END PUBLIC KEY-----"];
     
-//    [JSPatch startWithAppKey:@"f869a8a5aed12b7f"];
-//    [JSPatch setupRSAPublicKey:@"-----BEGIN PUBLIC KEY-----\nMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9XtvRoBF4ECxY6AYTbhbLWGZ1\nWwCqn4uospjWZytu1NKFdPuW3jwyLySOpUqgbPwfSwPtzi8i2L2aTC58OeYoX7mD\n7yALGI5s+iX0fcoh//p+UQfP5r8deMRvJN5kWmXQrzssiEVHqA7lMDLBvw2jURUE\ncat7+9N0SVjBv+Ax1QIDAQAB\n-----END PUBLIC KEY-----"];
-//#ifdef DEBUG
-//    [JSPatch setupDevelopment];
-//#endif
-//      [JSPatch sync];
-////
-//    [JSPatch setupCallback:^(JPCallbackType type, NSDictionary *data, NSError *error) {
-//        if (type == JPCallbackTypeJSException) {
-//            NSAssert(NO, data[@"msg"]);
-//        }
-//    }];
-    [JSPatch testScriptInBundle];
+#ifdef DEBUG
+    [JSPatch setupDevelopment];
+#endif
+      [JSPatch sync];
+
+    [JSPatch setupCallback:^(JPCallbackType type, NSDictionary *data, NSError *error) {
+        if (type == JPCallbackTypeJSException) {
+            NSAssert(NO, data[@"msg"]);
+        }
+    }];
+//    [JSPatch testScriptInBundle];
    
 
     return YES;
