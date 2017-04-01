@@ -802,9 +802,9 @@
 				TargetAttributes = {
 					0DCDFED41DD1C99F009F31F9 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = J6HTH2R28B;
+						DevelopmentTeam = U2EZJ47WP7;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
 								enabled = 1;
@@ -1128,7 +1128,7 @@
 				CODE_SIGN_ENTITLEMENTS = PersonUniversity/PersonUniversity.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = J6HTH2R28B;
+				DEVELOPMENT_TEAM = U2EZJ47WP7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1145,10 +1145,10 @@
 					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat",
 				);
 				MODULEMAP_PRIVATE_FILE = "PersonUniversity-Swift.h";
-				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
+				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversityT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5693725d-d303-4940-a625-60fb5bd9715c";
-				PROVISIONING_PROFILE_SPECIFIER = "ddg-development";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PersonUniversity/Class/SwiftClass/PersonUniversity-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1164,7 +1164,7 @@
 				CODE_SIGN_ENTITLEMENTS = PersonUniversity/PersonUniversity.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = J6HTH2R28B;
+				DEVELOPMENT_TEAM = U2EZJ47WP7;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1181,10 +1181,10 @@
 					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat",
 				);
 				MODULEMAP_PRIVATE_FILE = "PersonUniversity-Swift.h";
-				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
+				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversityT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5693725d-d303-4940-a625-60fb5bd9715c";
-				PROVISIONING_PROFILE_SPECIFIER = "ddg-development";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "PersonUniversity/Class/SwiftClass/PersonUniversity-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

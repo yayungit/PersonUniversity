@@ -79,6 +79,7 @@ EOM
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle"
   install_resource "JSPatch/JSPatch/JSPatch.js"
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "RongCloudIM/RongCloudIM/RongCloud.bundle"
   install_resource "RongCloudIM/RongCloudIM/en.lproj"
   install_resource "RongCloudIM/RongCloudIM/zh-Hans.lproj"
@@ -93,6 +94,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle"
   install_resource "JSPatch/JSPatch/JSPatch.js"
+  install_resource "MJRefresh/MJRefresh/MJRefresh.bundle"
   install_resource "RongCloudIM/RongCloudIM/RongCloud.bundle"
   install_resource "RongCloudIM/RongCloudIM/en.lproj"
   install_resource "RongCloudIM/RongCloudIM/zh-Hans.lproj"

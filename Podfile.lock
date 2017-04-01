@@ -27,6 +27,7 @@ PODS:
     - JSPatch
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
   - PureLayout (3.0.2)
   - RongCloudIM (2.8.6):
     - RongCloudIM/CallKit (= 2.8.6)
@@ -61,6 +62,7 @@ DEPENDENCIES:
   - JSPatchPlatform (~> 1.6.6)
   - Masonry
   - MBProgressHUD
+  - MJRefresh (~> 3.1.12)
   - PureLayout
   - RongCloudIM (~> 2.8.6)
   - UITableView+FDTemplateLayoutCell
@@ -74,11 +76,12 @@ SPEC CHECKSUMS:
   JSPatchPlatform: 8cc9aaebe21109d5fdfb4500384ddf38ed0990e9
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   RongCloudIM: f35630e60f7d393ea93b04d4cd6152c9191b8d05
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
   UMengUShare: fc0a98b8d5297632e82874318fd72a10d17da228
 
-PODFILE CHECKSUM: a6d537b24559bd1aa31b2c451a628610a8f15bfa
+PODFILE CHECKSUM: a9feb9df739fad0c36544b3a705effbfbf97744e
 
 COCOAPODS: 1.2.0
