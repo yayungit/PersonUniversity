@@ -16,7 +16,7 @@
 #import "IMTestViewController.h"
 #import "CustomFlowLayoutViewController.h"
 #import "WKWebViewController.h"
-
+#import "CollectionViewItemCanMoveAndDeleteViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 {
@@ -29,7 +29,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"Home";
-    classArray = @[@"多线程测试",@"顶部分类类别",@"多个cell添加定时器,自适应布局",@"MRCTest",@"动画和iOS10原生语音识别",@"融云IM",@"重写flowlayout实现横向滚动翻页",@"WKWbView"];
+    classArray = @[@"多线程测试",@"顶部分类类别",@"多个cell添加定时器,自适应布局",@"MRCTest",@"动画和iOS10原生语音识别",@"融云IM",@"重写flowlayout实现横向滚动翻页",@"WKWbView",@"UICollectionView的item移动和删除"];
     [self configUI];
 }
 // MARK: CONFIG-UI
@@ -93,6 +93,11 @@
         case 7: {
             WKWebViewController *webView = [WKWebViewController new];
             [self.navigationController pushViewController:webView animated:YES];
+        }
+            break;
+        case 8: {
+            CollectionViewItemCanMoveAndDeleteViewController *VC = [CollectionViewItemCanMoveAndDeleteViewController new];
+            [self.navigationController pushViewController:VC animated:YES];
         }
             break;
         default:

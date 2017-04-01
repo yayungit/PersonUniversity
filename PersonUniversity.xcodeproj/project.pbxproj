@@ -28,6 +28,8 @@
 		0D3E91101E52EA2B00409701 /* AnmationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E910F1E52EA2B00409701 /* AnmationTestViewController.m */; };
 		0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE21D1E16401B00D4219C /* TimerViewController.m */; };
 		0D5DE2211E16546600D4219C /* TimerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE2201E16546600D4219C /* TimerManger.m */; };
+		0D66CC6F1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D66CC6E1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.m */; };
+		0D66CC721E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D66CC711E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.m */; };
 		0D70F63F1E88AB4F0059949E /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D70F63E1E88AB4F0059949E /* WKWebViewController.m */; };
 		0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D759C281E45D60E00FCE6D3 /* Tools.m */; };
 		0D7AC11C1E2DC90600EF72BE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7AC11A1E2DC90600EF72BE /* Fabric.framework */; };
@@ -134,6 +136,10 @@
 		0D5DE21D1E16401B00D4219C /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0D5DE21F1E16546600D4219C /* TimerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManger.h; sourceTree = "<group>"; };
 		0D5DE2201E16546600D4219C /* TimerManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerManger.m; sourceTree = "<group>"; };
+		0D66CC6D1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewItemCanMoveAndDeleteViewController.h; sourceTree = "<group>"; };
+		0D66CC6E1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewItemCanMoveAndDeleteViewController.m; sourceTree = "<group>"; };
+		0D66CC701E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveAndDeleteCollectionViewCell.h; sourceTree = "<group>"; };
+		0D66CC711E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveAndDeleteCollectionViewCell.m; sourceTree = "<group>"; };
 		0D70F63D1E88AB4F0059949E /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		0D70F63E1E88AB4F0059949E /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		0D759C271E45D60E00FCE6D3 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
@@ -423,6 +429,17 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		0D66CC6C1E8B97690054C4ED /* CollectionView的cell移动和删除 */ = {
+			isa = PBXGroup;
+			children = (
+				0D66CC6D1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.h */,
+				0D66CC6E1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.m */,
+				0D66CC701E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.h */,
+				0D66CC711E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.m */,
+			);
+			path = "CollectionView的cell移动和删除";
+			sourceTree = "<group>";
+		};
 		0D70F6391E88A9E50059949E /* WKWebKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +452,7 @@
 		0D871FF41DFA5B5B00728F35 /* SubClass */ = {
 			isa = PBXGroup;
 			children = (
+				0D66CC6C1E8B97690054C4ED /* CollectionView的cell移动和删除 */,
 				0D70F6391E88A9E50059949E /* WKWebKit */,
 				0DC3665F1E8246EF00DD0D45 /* 横向滚动无限轮播collectionView */,
 				0D26A8211E5C13F700D7DBFD /* 融云IM */,
@@ -775,9 +793,9 @@
 				TargetAttributes = {
 					0DCDFED41DD1C99F009F31F9 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = U9GXWMVM3V;
+						DevelopmentTeam = J6HTH2R28B;
 						LastSwiftMigration = 0820;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					0DCDFEED1DD1C99F009F31F9 = {
 						CreatedOnToolsVersion = 8.0;
@@ -917,6 +935,7 @@
 				0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */,
 				0D3E90C31E499A3200409701 /* UIView+auto.m in Sources */,
 				0D14E7181E4828C500C002A6 /* ViewController.swift in Sources */,
+				0D66CC6F1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.m in Sources */,
 				0D14E6F91E481DCB00C002A6 /* UIColor+Hex.m in Sources */,
 				0D3E90C01E4999BE00409701 /* UIFont+XM.m in Sources */,
 				0D3E90BC1E497C7C00409701 /* AutoTestTableViewCell.m in Sources */,
@@ -935,6 +954,7 @@
 				0DA6B0891E850A2900B7B22F /* UIViewController+YYHUD.m in Sources */,
 				0D0BC03E1DE71A26000134B8 /* TabbarViewController.m in Sources */,
 				0DC983AD1E1CDC4D00F9D665 /* TimerCountDownCell.m in Sources */,
+				0D66CC721E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.m in Sources */,
 				0DC3666F1E82607E00DD0D45 /* AllLeftFlowLayout.m in Sources */,
 				0D26A8241E5C142500D7DBFD /* IMTestViewController.m in Sources */,
 				0D93DE871DFEDBA0004FF0BF /* UIView+frame.m in Sources */,
@@ -1090,8 +1110,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = U9GXWMVM3V;
+				DEVELOPMENT_TEAM = J6HTH2R28B;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1108,8 +1129,10 @@
 					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat",
 				);
 				MODULEMAP_PRIVATE_FILE = "PersonUniversity-Swift.h";
-				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hk.ddg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5693725d-d303-4940-a625-60fb5bd9715c";
+				PROVISIONING_PROFILE_SPECIFIER = "ddg-development";
 				SWIFT_OBJC_BRIDGING_HEADER = "PersonUniversity/Class/SwiftClass/PersonUniversity-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -1122,8 +1145,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = U9GXWMVM3V;
+				DEVELOPMENT_TEAM = J6HTH2R28B;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1140,8 +1164,10 @@
 					"$(PROJECT_DIR)/Pods/UMengUShare/UShareSDK/SocialLibraries/WeChat",
 				);
 				MODULEMAP_PRIVATE_FILE = "PersonUniversity-Swift.h";
-				PRODUCT_BUNDLE_IDENTIFIER = YYStar.PersonUniversity;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.hk.ddg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5693725d-d303-4940-a625-60fb5bd9715c";
+				PROVISIONING_PROFILE_SPECIFIER = "ddg-development";
 				SWIFT_OBJC_BRIDGING_HEADER = "PersonUniversity/Class/SwiftClass/PersonUniversity-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};

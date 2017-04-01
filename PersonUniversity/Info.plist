@@ -18,10 +18,6 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>App需要您同意，才能访问语音识别技术</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>App需要您同意，才能访问麦克风</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -64,6 +60,10 @@
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>允许前台使用定位</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>App需要您同意，才能访问麦克风</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>App需要您同意，才能访问语音识别技术</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
