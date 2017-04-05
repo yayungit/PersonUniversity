@@ -24,8 +24,8 @@
     segmentCustonView.classButtonDelegate = self;
 }
 - (void)didClassButtonClick:(UIButton *)button andButtonIndex:(NSInteger)index {
-    // 断言测试；
-    [self.HUD showMessage:@"ok?"];
+//    [self.HUD showMessage:@"ok?"];
+    [self.HUD showLoadingRequest:@"网络请求加载数据"];
     
 }
 

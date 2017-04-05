@@ -7,7 +7,7 @@
 //
 
 #import "YYHUD.h"
-#import <MBProgressHUD.h>
+
 @interface YYHUD ()<MBProgressHUDDelegate>
 @property (nonatomic, weak) UIView *tempView;
 @property (nonatomic, strong) MBProgressHUD *HUD;
@@ -28,15 +28,19 @@
     [self.tempView addSubview:_HUD];
 }
 - (void)showLoadingRequest:(NSString *)message {
-    [self showMessage:message duration: -1];
+    [self showMessage:message mode:MBProgressHUDModeIndeterminate duration:-1];
 }
 - (void)showMessage:(NSString *)message {
     [self showMessage:message duration:1.0];
 }
 - (void)showMessage:(NSString *)message duration:(NSTimeInterval)duration {
+    [self showMessage:message mode:MBProgressHUDModeText duration:duration];
+}
+- (void)showMessage:(NSString *)message mode:(MBProgressHUDMode)mode duration:(NSTimeInterval)duration {
     [self creatHUD];
     _HUD.label.text = nil;
     _HUD.label.text = message;
+    _HUD.mode = mode;
     [self.HUD showAnimated:YES];
     
     if (duration>0) {
