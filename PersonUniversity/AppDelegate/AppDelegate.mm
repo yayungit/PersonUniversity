@@ -19,6 +19,8 @@
 #import <JSPatchPlatform/JSPatch.h>
 #import <JPEngine.h>
 
+#import "modeltest.h"
+
 @interface AppDelegate () <RCIMUserInfoDataSource>
 @property (nonatomic, strong) LockerViewController *lockerViewController;
 @end
@@ -94,7 +96,12 @@ static NSString *const RongYunToken = @"0f52+tFmt3IlHz9uQZuv+V21eZtTq2YMEAQwTuYI
     }];
 //    [JSPatch testScriptInBundle];
    
-
+    
+    
+    
+[modeltest getPropertyNameWithClass:[modeltest class] withBoclk:^(NSString *propertyName, NSString *propertyType) {
+    
+}];
     return YES;
 }
 // 展示左视图

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,8 +21,11 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="y4k-ya-3zF">
-                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <rect key="frame" x="0.0" y="64" width="375" height="200"/>
                     <color key="backgroundColor" red="0.99197115380000001" green="0.8065985577" blue="0.9654447115" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="8Vi-TI-7Va"/>
+                    </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gZR-yK-kHb">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -36,7 +39,6 @@
                 <constraint firstItem="y4k-ya-3zF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Xo-iF-MHG"/>
                 <constraint firstItem="y4k-ya-3zF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Lkw-FY-KFq"/>
                 <constraint firstAttribute="trailing" secondItem="y4k-ya-3zF" secondAttribute="trailing" id="uJj-WW-QTy"/>
-                <constraint firstAttribute="bottom" secondItem="y4k-ya-3zF" secondAttribute="bottom" id="zrP-lJ-6FT"/>
             </constraints>
         </view>
     </objects>

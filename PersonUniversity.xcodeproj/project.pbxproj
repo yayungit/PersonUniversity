@@ -28,10 +28,13 @@
 		0D3E90CE1E4C134E00409701 /* MRCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E90CD1E4C134E00409701 /* MRCTestViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0D3E910C1E4DAFAB00409701 /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E910B1E4DAFAB00409701 /* Http.m */; };
 		0D3E91101E52EA2B00409701 /* AnmationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D3E910F1E52EA2B00409701 /* AnmationTestViewController.m */; };
+		0D4A86A11EA4894D00FA1C00 /* FlowCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A86A01EA4894D00FA1C00 /* FlowCover.m */; };
+		0D4A87211EA73B8800FA1C00 /* modeltest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D4A87201EA73B8800FA1C00 /* modeltest.m */; };
 		0D5DE21E1E16401B00D4219C /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE21D1E16401B00D4219C /* TimerViewController.m */; };
 		0D5DE2211E16546600D4219C /* TimerManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D5DE2201E16546600D4219C /* TimerManger.m */; };
 		0D66CC6F1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D66CC6E1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.m */; };
 		0D66CC721E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D66CC711E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.m */; };
+		0D6C57E31EA0C0A800B61728 /* NSObject+YYSkyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C57E21EA0C0A800B61728 /* NSObject+YYSkyModel.m */; };
 		0D70F63F1E88AB4F0059949E /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D70F63E1E88AB4F0059949E /* WKWebViewController.m */; };
 		0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D759C281E45D60E00FCE6D3 /* Tools.m */; };
 		0D7AC11C1E2DC90600EF72BE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D7AC11A1E2DC90600EF72BE /* Fabric.framework */; };
@@ -137,6 +140,10 @@
 		0D3E910B1E4DAFAB00409701 /* Http.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Http.m; sourceTree = "<group>"; };
 		0D3E910E1E52EA2B00409701 /* AnmationTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnmationTestViewController.h; sourceTree = "<group>"; };
 		0D3E910F1E52EA2B00409701 /* AnmationTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnmationTestViewController.m; sourceTree = "<group>"; };
+		0D4A869F1EA4894D00FA1C00 /* FlowCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowCover.h; sourceTree = "<group>"; };
+		0D4A86A01EA4894D00FA1C00 /* FlowCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowCover.m; sourceTree = "<group>"; };
+		0D4A871F1EA73B8800FA1C00 /* modeltest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = modeltest.h; sourceTree = "<group>"; };
+		0D4A87201EA73B8800FA1C00 /* modeltest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = modeltest.m; sourceTree = "<group>"; };
 		0D5DE21C1E16401B00D4219C /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		0D5DE21D1E16401B00D4219C /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		0D5DE21F1E16546600D4219C /* TimerManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerManger.h; sourceTree = "<group>"; };
@@ -145,6 +152,8 @@
 		0D66CC6E1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewItemCanMoveAndDeleteViewController.m; sourceTree = "<group>"; };
 		0D66CC701E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveAndDeleteCollectionViewCell.h; sourceTree = "<group>"; };
 		0D66CC711E8B98D80054C4ED /* MoveAndDeleteCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoveAndDeleteCollectionViewCell.m; sourceTree = "<group>"; };
+		0D6C57E11EA0C0A800B61728 /* NSObject+YYSkyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYSkyModel.h"; sourceTree = "<group>"; };
+		0D6C57E21EA0C0A800B61728 /* NSObject+YYSkyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYSkyModel.m"; sourceTree = "<group>"; };
 		0D70F63D1E88AB4F0059949E /* WKWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		0D70F63E1E88AB4F0059949E /* WKWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		0D759C271E45D60E00FCE6D3 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
@@ -518,6 +527,10 @@
 				0D3E90C21E499A3200409701 /* UIView+auto.m */,
 				0DA6B0871E850A2900B7B22F /* UIViewController+YYHUD.h */,
 				0DA6B0881E850A2900B7B22F /* UIViewController+YYHUD.m */,
+				0D6C57E11EA0C0A800B61728 /* NSObject+YYSkyModel.h */,
+				0D6C57E21EA0C0A800B61728 /* NSObject+YYSkyModel.m */,
+				0D4A871F1EA73B8800FA1C00 /* modeltest.h */,
+				0D4A87201EA73B8800FA1C00 /* modeltest.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -569,6 +582,8 @@
 				0DC3666E1E82607E00DD0D45 /* AllLeftFlowLayout.m */,
 				0DC366711E835D9700DD0D45 /* ScrollScale.h */,
 				0DC366721E835D9700DD0D45 /* ScrollScale.m */,
+				0D4A869F1EA4894D00FA1C00 /* FlowCover.h */,
+				0D4A86A01EA4894D00FA1C00 /* FlowCover.m */,
 			);
 			name = "横向滚动无限轮播collectionView";
 			path = "横向滚动分页collectionView";
@@ -952,14 +967,17 @@
 				0D14E7181E4828C500C002A6 /* ViewController.swift in Sources */,
 				0D66CC6F1E8B978C0054C4ED /* CollectionViewItemCanMoveAndDeleteViewController.m in Sources */,
 				0D14E6F91E481DCB00C002A6 /* UIColor+Hex.m in Sources */,
+				0D4A86A11EA4894D00FA1C00 /* FlowCover.m in Sources */,
 				0D3E90C01E4999BE00409701 /* UIFont+XM.m in Sources */,
 				0D3E90BC1E497C7C00409701 /* AutoTestTableViewCell.m in Sources */,
 				0DC366681E824A9800DD0D45 /* CustomCollectionViewCell.m in Sources */,
 				0D8720011DFA5C6100728F35 /* SegmentViewController.m in Sources */,
+				0D4A87211EA73B8800FA1C00 /* modeltest.m in Sources */,
 				0D3E90C91E4AED9900409701 /* GCDTestViewController.m in Sources */,
 				0D5DE2211E16546600D4219C /* TimerManger.m in Sources */,
 				0D759C291E45D60E00FCE6D3 /* Tools.m in Sources */,
 				0D0D6DC41DE83ED000FA3D1A /* CommunityViewController.m in Sources */,
+				0D6C57E31EA0C0A800B61728 /* NSObject+YYSkyModel.m in Sources */,
 				0D8720051DFA5C9100728F35 /* SegmentCustonView.m in Sources */,
 				0DCDFF241DD1CC49009F31F9 /* LockerViewController.m in Sources */,
 				0D3E910C1E4DAFAB00409701 /* Http.m in Sources */,
