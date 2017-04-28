@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    SegmentCustonView *segmentCustonView = [[SegmentCustonView alloc]initWithFrame:CGRectMake(0, 64, kSCREENWIDTH, 40) andClassArray:@[@"游泳",@"旅游",@"爬山",@"游乐场",@"撒哈",@"旅游",@"爬山",@"游乐场"]];
+    SegmentCustonView *segmentCustonView = [[SegmentCustonView alloc]initWithFrame:CGRectMake(0, 64, kSCREENWIDTH, 40) andClassArray:@[@"游泳",@"旅游",@"爬山",@"游乐场",@"撒哈",@"旅游",@"爬山",@"游乐场",@"撒哈",@"旅游",@"爬山",@"游乐场",@"撒哈",@"旅游",@"爬山",@"游乐场",@"撒哈",@"旅游"]];
     [self.view addSubview:segmentCustonView];
     
     segmentCustonView.classButtonDelegate = self;
@@ -35,7 +35,9 @@
 //    [self.HUD hide];
 }
 
-
+-(void)dealloc {
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

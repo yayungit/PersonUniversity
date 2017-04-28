@@ -23,6 +23,7 @@ typedef NS_ENUM(NSUInteger, ScrollbarType) {
     NSMutableArray *buttonArray;
     NSMutableArray *lineLabelArray;
     ScrollbarType scrollBarType;
+    float lastContentSizeWidth;
 }
 // 用来接受外界传来的数组，及分类的组合
 @property (nonatomic, strong) NSArray *classTemArray;
@@ -36,7 +37,7 @@ static NSInteger const titleFont = 14;
 static NSInteger const lineSpace = 10;
 // 默认下划线的颜色
 #define color  [UIColor redColor]
-static CGFloat contentSizeWidth = 0;
+
 @implementation SegmentCustonView
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -54,7 +55,7 @@ static CGFloat contentSizeWidth = 0;
 }
 
 - (void)configUI:(CGRect)frame {
-    
+    CGFloat contentSizeWidth = 0;
     scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
     scrollView.backgroundColor = [UIColor whiteColor];
     scrollView.showsVerticalScrollIndicator = NO;
@@ -101,6 +102,7 @@ static CGFloat contentSizeWidth = 0;
     UIView *viewsss = [UIView new];
     [self addSubview:viewsss];
     [self addSubview:scrollView];
+    lastContentSizeWidth = contentSizeWidth;
 }
 
 
@@ -112,7 +114,7 @@ static CGFloat contentSizeWidth = 0;
         if (btn == button) {
             [btn setTitleColor:color forState:UIControlStateNormal];
             temLineLabel.backgroundColor = color;
-            if (contentSizeWidth>kSCREENWIDTH) {
+            if (lastContentSizeWidth>kSCREENWIDTH) {
 //                YYLog(@"---%f,====%f-----%f",scrollView.contentOffset.x,btn.frame.origin.x,scrollView.contentSize.width-kSCREENWIDTH/2);
                 
                 if (btn.frame.origin.x >= kSCREENWIDTH/2 && btn.frame.origin.x<=scrollView.contentSize.width-kSCREENWIDTH/2) {
