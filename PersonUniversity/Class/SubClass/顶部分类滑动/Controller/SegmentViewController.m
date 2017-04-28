@@ -18,22 +18,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    SegmentCustonView *segmentCustonView = [[SegmentCustonView alloc]initWithFrame:CGRectMake(0, 64, kSCREENWIDTH, 40) andClassArray:@[@"游泳",@"旅游",@"爬山",@"游乐场",@"撒哈",@"旅游",@"爬山",@"游乐场",@"撒哈",@"旅游"]];
-    segmentCustonView.iiii = 3;
+    SegmentCustonView *segmentCustonView = [[SegmentCustonView alloc]initWithFrame:CGRectMake(0, 64, kSCREENWIDTH, 40) andClassArray:@[@"游泳",@"旅游",@"爬山",@"游乐场",@"撒哈",@"旅游",@"爬山",@"游乐场"]];
     [self.view addSubview:segmentCustonView];
     
     segmentCustonView.classButtonDelegate = self;
 }
 - (void)didClassButtonClick:(UIButton *)button andButtonIndex:(NSInteger)index {
 //    [self.HUD showMessage:@"ok?"];
-    [self.HUD showLoadingRequest:@"网络请求加载数据"];
+//    [self.HUD showLoadingRequest:@"网络请求加载数据"];
     
 }
 
 
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self.HUD hide];
+//    [self.HUD hide];
 }
 
 
