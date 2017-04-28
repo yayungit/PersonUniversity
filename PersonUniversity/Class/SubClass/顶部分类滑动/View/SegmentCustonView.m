@@ -7,6 +7,11 @@
 //
 
 #import "SegmentCustonView.h"
+
+#define kSCREENWIDTH   [UIScreen mainScreen].bounds.size.width
+#define kSCREENHEIGHT  [UIScreen mainScreen].bounds.size.height
+
+// 暂时没写
 typedef NS_ENUM(NSUInteger, ScrollbarType) {
     ScrollbarTypeDefault, // 默认下划线
     ScrollbarTypeRound, // 圆角背景
@@ -29,8 +34,9 @@ static NSInteger const kTag = 10000;
 static NSInteger const titleFont = 14;
 // 按钮之间的间隔
 static NSInteger const lineSpace = 10;
+// 默认下划线的颜色
 #define color  [UIColor redColor]
-
+static CGFloat contentSizeWidth = 0;
 @implementation SegmentCustonView
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -48,8 +54,9 @@ static NSInteger const lineSpace = 10;
 }
 
 - (void)configUI:(CGRect)frame {
-    CGFloat contentSizeWidth = 0;
+    
     scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
+    scrollView.backgroundColor = [UIColor whiteColor];
     scrollView.showsVerticalScrollIndicator = NO;
     scrollView.showsHorizontalScrollIndicator = NO;
     buttonArray = [NSMutableArray array];
@@ -57,7 +64,7 @@ static NSInteger const lineSpace = 10;
     for (int i = 0; i < _classTemArray.count; i++) {
         UIButton *titleButton = [UIButton buttonWithType:UIButtonTypeSystem];
         [titleButton setTitle:_classTemArray[i] forState:UIControlStateNormal];
-        [titleButton setTintColor:UIColorFromRGB(0x333333)];
+        [titleButton setTintColor:[UIColor blackColor]];
         titleButton.titleLabel.font = [UIFont systemFontOfSize:titleFont];
        
         
@@ -84,13 +91,12 @@ static NSInteger const lineSpace = 10;
             lineLabel.backgroundColor = color;
         }
     }
-//    if (scrollBarType == ScrollbarTypeDefault) {
-        _lineLabel = [[UILabel alloc] init];
-        UILabel *label = lineLabelArray[0];
-        _lineLabel.frame = label.frame;
-        _lineLabel.backgroundColor = color;
-        [scrollView addSubview:_lineLabel];
-//    }
+    _lineLabel = [[UILabel alloc] init];
+    UILabel *label = lineLabelArray[0];
+    _lineLabel.frame = label.frame;
+    _lineLabel.backgroundColor = color;
+    [scrollView addSubview:_lineLabel];
+    
     scrollView.contentSize = CGSizeMake(contentSizeWidth+lineSpace, frame.size.height);
     UIView *viewsss = [UIView new];
     [self addSubview:viewsss];
@@ -106,26 +112,34 @@ static NSInteger const lineSpace = 10;
         if (btn == button) {
             [btn setTitleColor:color forState:UIControlStateNormal];
             temLineLabel.backgroundColor = color;
-            YYLog(@"---%f,====%f-----%f",scrollView.contentOffset.x,btn.frame.origin.x,scrollView.contentSize.width-kSCREENWIDTH/2);
-            if (btn.frame.origin.x >= kSCREENWIDTH/2 && btn.frame.origin.x<=scrollView.contentSize.width-kSCREENWIDTH/2) {
-                // 中间部分
+            if (contentSizeWidth>kSCREENWIDTH) {
+//                YYLog(@"---%f,====%f-----%f",scrollView.contentOffset.x,btn.frame.origin.x,scrollView.contentSize.width-kSCREENWIDTH/2);
+                
+                if (btn.frame.origin.x >= kSCREENWIDTH/2 && btn.frame.origin.x<=scrollView.contentSize.width-kSCREENWIDTH/2) {
+                    // 中间部分
+                    [UIView animateWithDuration:.3 animations:^{
+                        scrollView.contentOffset = CGPointMake(btn.frame.origin.x-kSCREENWIDTH/2+btn.frame.size.width/2, 0);
+                    }];
+                } else if (btn.frame.origin.x<kSCREENWIDTH/2) {
+                    // 前半部分
+                    [UIView animateWithDuration:.3 animations:^{
+                        scrollView.contentOffset = CGPointMake(0, 0);
+                    }];
+                } else {
+                    // 后半部分
+                    [UIView animateWithDuration:.3 animations:^{
+                        scrollView.contentOffset = CGPointMake(scrollView.contentSize.width-kSCREENWIDTH, 0);
+                    }];
+                }
                 [UIView animateWithDuration:.3 animations:^{
-                    scrollView.contentOffset = CGPointMake(btn.frame.origin.x-kSCREENWIDTH/2+btn.frame.size.width/2, 0);
-                }];
-            } else if (btn.frame.origin.x<kSCREENWIDTH/2) {
-                // 前半部分
-                [UIView animateWithDuration:.3 animations:^{
-                    scrollView.contentOffset = CGPointMake(0, 0);
+                    _lineLabel.frame = temLineLabel.frame;
                 }];
             } else {
-                // 后半部分
                 [UIView animateWithDuration:.3 animations:^{
-                    scrollView.contentOffset = CGPointMake(scrollView.contentSize.width-kSCREENWIDTH, 0);
+                    _lineLabel.frame = temLineLabel.frame;
                 }];
             }
-            [UIView animateWithDuration:.3 animations:^{
-                _lineLabel.frame = temLineLabel.frame;
-            }];
+            
         } else {
             [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [btn setBackgroundColor:[UIColor whiteColor]];
@@ -136,5 +150,8 @@ static NSInteger const lineSpace = 10;
         [_classButtonDelegate didClassButtonClick:button andButtonIndex:button.tag-kTag];
     }
 }
+
+
+
 
 @end

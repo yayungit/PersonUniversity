@@ -13,7 +13,7 @@
 @end
 
 @implementation TimerManger
-
+static dispatch_once_t onceToken;
 + (instancetype)shareInstand {
     static dispatch_once_t onceToken;
     static TimerManger *manger = nil;
@@ -40,6 +40,7 @@
     [[NSNotificationCenter defaultCenter] postNotificationName:@"timerAction" object:timer userInfo:nil];
 }
 - (void)stop {
+    onceToken = 0;
     [self.timer invalidate];
     self.timer = nil;
 }

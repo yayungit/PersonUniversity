@@ -16,6 +16,45 @@
 
 @implementation GCDTestViewController
 
+
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSDate *date = [NSDate date];
+    YYLog(@"date=%@", date);
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    NSTimeInterval timeInterval1970 = [date timeIntervalSince1970];
+    YYLog(@"timeInterval1970 = %0.f", timeInterval1970);
+    
+    NSString *datestr = [formatter stringFromDate:date];
+    YYLog(@"datestr=%@", datestr);
+    
+    
+    
+    [formatter setDateStyle:NSDateFormatterMediumStyle];
+    [formatter setTimeStyle:NSDateFormatterShortStyle];
+    [formatter setDateFormat:@"YYYY-MM-dd HH:mm:ss"]; // ----------设置你想要的格式,hh与HH的区别:分别表示12小时制,24小时制
+    //设置时区,这个对于时间的处理有时很重要
+    NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Beijing"];
+    [formatter setTimeZone:timeZone];
+    NSString *datestr2 = [formatter stringFromDate:date];
+    YYLog(@"datestr=%@", datestr2);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     UIImageView *imageView = [[UIImageView alloc] init];

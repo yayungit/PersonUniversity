@@ -23,10 +23,8 @@
     }
     self.countDownLabel.text = [NSString stringWithFormat:@"%02zd:%02zd:%02zd", countDown/3600, (countDown/60)%60, countDown%60];
 }
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)dealloc {
+    [[TimerManger shareInstand] stop];
 }
 
 @end
