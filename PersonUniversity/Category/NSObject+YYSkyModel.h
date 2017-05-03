@@ -14,7 +14,7 @@
  key: 属性名字
  value: 字典中取值时用的key
  */
-+ (void)replacedEntityElementDictionary;
++ (NSDictionary *)replacedEntityElementDictionary;
 
 @end
 
